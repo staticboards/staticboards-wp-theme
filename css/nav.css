@@ -1,0 +1,47 @@
+#header-desktop {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	background: #ffffff;	
+}
+
+#header-desktop #sblogo {
+	height: 70px;
+}
+
+#header-desktop #sblogo a {
+	width: 90px;
+	height: 70px;
+	padding-left: 90px;
+	padding-bottom: 45px;
+	background-image: url( '../static/css/images/logo.svg' ) ;
+	display:inline;
+}
+
+#header-desktop #navigation ul
+{
+	text-transform:uppercase;
+	word-wrap:normal;
+	font-weight: 400 ;
+	padding: 0; margin: 0;
+}
+
+#header-desktop #navigation li
+{
+	list-style-type: none;	
+}
+
+#header-desktop #navigation a {
+	font-weight: 400;
+	border-top: 1px solid #eee;
+	color: #666;
+	text-decoration: none;
+}
+
+#header-desktop #navigation .active a  {
+	border-top: 1px solid #12aee8 ;
+}
+
+#header-desktop #navigation a:hover {
+	color: #333;
+	text-decoration: none;
+}

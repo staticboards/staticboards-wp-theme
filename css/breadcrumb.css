@@ -1,0 +1,22 @@
+#breadcrumb
+{
+}
+
+#breadcrumb ul
+{
+	padding: 0 ; margin: 0 ;
+}
+
+#breadcrumb li
+{
+	list-style-type: none;
+	padding: 0.5em 0.5em 0.5em 0;
+	float:left;
+}
+
+#breadcrumb , #breadcrumb a
+{
+	color: #aaa;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}

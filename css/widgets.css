@@ -1,0 +1,34 @@
+#widgets-bottom {
+	font-size: 14px;
+	font-weight: 200;
+	background-image: none;
+	background-color: #222222;
+	padding-bottom: 13em;
+}
+
+#widgets-bottom , #widgets-bottom a , #widgets-bottom h3
+{
+	color: #DFDFDF;
+}
+
+#widgets-bottom a {
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 90%;
+}
+
+#widgets-bottom h3 {
+	text-transform:uppercase;
+	margin: 0;
+	padding: 0;	
+	padding-top: 15px;	
+	padding-bottom: 5px;	
+	font-weight: 600 ;
+	font-size: 18px;
+}
+
+#widgets-bottom p {
+	margin: 0;
+	padding: 0;	
+	padding-bottom: 1px;	
+}

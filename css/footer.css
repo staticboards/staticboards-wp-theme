@@ -1,0 +1,50 @@
+.bgtitlesection
+{
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+/* BACKGROUNDS */
+
+.bg-highlevel {
+  background: url('../static/css/images/highlevel-bg.jpg') repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+}
+
+.bg-deskdark {
+  background: url('../static/css/images/deskdark-bg.jpg') repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+}
+
+.bg-skyline {
+  background: url('../static/css/images/skyline-bg.jpg') repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+}
+
+
+.light-color {
+	color: #eee;
+}
+
+
+.toright
+{
+    width: 100%;
+    float: right;
+    text-align: right;
+}
+
+#footer {
+	padding: 0.5em 0;
+	background-color: #444;
+	background-image: none;
+	font-style: italic;
+	line-height: 1;
+	font-size: 80%;
+	font-weight: 300;
+}
+
+#footer a {
+	text-decoration: none;
+}
+
+#footer , #footer a {
+		color: #F2F2F2;
+}
