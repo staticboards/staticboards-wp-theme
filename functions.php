@@ -105,6 +105,27 @@ if ( function_exists( 'register_nav_menus' ) ) {
 
 function staticboards_widgets_init() {
 
+
+    register_sidebar( array(
+        'name'          => __( 'Content Bottom CTA 1', 'staticboards' ),
+        'id'            => 'sidebar-cta-light',
+        'description'   => __( 'Appears at the bottom of the content on posts and pages.', 'staticboards' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="row"><div class="col-xs-12">',
+        'after_widget'  => '</div></div></section>',
+        'before_title'  => '<header><div class="row"><div class="col-xs-12"><h3 class="widget-title">',
+        'after_title'   => '</h3></div></div></header>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => __( 'Content Bottom CTA 2', 'staticboards' ),
+        'id'            => 'sidebar-cta-dark',
+        'description'   => __( 'Appears at the bottom of the content on posts and pages.', 'staticboards' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ) );
+
     register_sidebar( array(
         'name'          => __( 'Content Bottom 1', 'staticboards' ),
         'id'            => 'sidebar-1',

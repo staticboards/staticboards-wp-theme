@@ -9,6 +9,8 @@ index.php: por defecto, muestra la lista de posts -> iteracion de template-parts
 template-parts -> navbar : barra de menus
 template-parts -> calltoactions : form de contacto
 
+sidebar-content-bottom.php : zona de call to actions inferiores
+
 
 TODO
 
