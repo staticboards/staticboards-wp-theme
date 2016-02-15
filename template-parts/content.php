@@ -2,7 +2,7 @@
 
 <div class="fullwidth">
 
-			<div class="container-fluid pagewidth">
+			<div class="container-fluid postwidth">
 			<div class="row"><div class="col-xs-12">
 
 				<header class="entry-header">
@@ -18,35 +18,48 @@
 
 </div>
 
-<!--
-	twentysixteen_excerpt();
 
-	twentysixteen_post_thumbnail();
--->
+<!--twentysixteen_post_thumbnail();-->
 
 <div class="fullwidth">
 
-	<div class="container-fluid pagewidth">
+			<div class="container-fluid postwidth">
+			<div class="row"><div class="col-xs-12">
+
+				<div class="entry-excerpt">
+				<?php
+					/* translators: %s: Name of current post */
+					//the_content( sprintf(
+					//	__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentysixteen' ),
+					//	get_the_title()
+					//) ); ?>
+
+				<?php staticboards_excerpt(); ?>
+				</div>
+
+			</div></div>
+			</div>
+
+</div>
+
+<div class="fullwidth">
+
+	<div class="container-fluid postwidth">
 		<div class="row"><div class="col-xs-12">
 
 		<div class="entry-body">
-
+		LINK PAGES
 		<?php
-			/* translators: %s: Name of current post */
-			the_content( sprintf(
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentysixteen' ),
-				get_the_title()
-			) );
-
 			wp_link_pages( array(
-				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentysixteen' ) . '</span>',
+				'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'staticboards' ) . '</span>',
 				'after'       => '</div>',
 				'link_before' => '<span>',
 				'link_after'  => '</span>',
-				'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'twentysixteen' ) . ' </span>%',
+				'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'staticboards' ) . ' </span>%',
 				'separator'   => '<span class="screen-reader-text">, </span>',
 			) );
 		?>
+		END LINK
 
 		</div>
 

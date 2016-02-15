@@ -252,16 +252,25 @@ a.flatbutton:hover {
 
 /* LAYOUT */
 
-@media only screen and (min-width : 980px) {
+@media only screen and (min-width : 730px) {
 
 	.pagewidth
 	{
-		max-width: 1310px;	
-		//max-width: 980px;	
+		max-width: 1200px;
+		//max-width: 1310px;	
 
 		margin-right: auto;
 		margin-left: auto;
 	}
+
+	.postwidth
+	{
+		max-width: 730px;	
+
+		margin-right: auto;
+		margin-left: auto;
+	}
+
 
 	.fullwidth
 	{

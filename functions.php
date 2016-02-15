@@ -138,3 +138,17 @@ function staticboards_widgets_init() {
 }
 
 add_action( 'widgets_init', 'staticboards_widgets_init' );
+
+
+
+if ( ! function_exists( 'staticboards_excerpt' ) ) :
+    function staticboards_excerpt( $class = 'entry-summary' ) {
+        $class = esc_attr( $class );
+
+        if ( has_excerpt() || is_search() ) : ?>
+            <div class="<?php echo $class; ?>">
+                <?php the_excerpt(); ?>
+            </div><!-- .<?php echo $class; ?> -->
+        <?php endif;
+    }
+endif;

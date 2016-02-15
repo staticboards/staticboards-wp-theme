@@ -10,7 +10,7 @@
 
 			<div class="fullwidth">
 
-				<div class="container-fluid pagewidth">
+				<div class="container-fluid postwidth">
 				<div class="row"><div class="col-xs-12">
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
