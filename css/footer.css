@@ -19,6 +19,16 @@
 }
 
 
+/* FORMS */
+.bg-highlevel input[type=text], .bg-highlevel input[type=password], .bg-highlevel input[type=input], 
+.bg-highlevel input[type=tel], .bg-highlevel input[type=url], .bg-highlevel input[type=email], 
+.bg-highlevel input[type=number], .bg-highlevel input[type=range], .bg-highlevel input[type=search], .bg-highlevel  input[type=color], 
+.bg-highlevel input[type=time], .bg-highlevel input[type=week], .bg-highlevel input[type=month], .bg-highlevel input[type=date], .bg-highlevel input[type=datetime], 
+.bg-highlevel textarea, .bg-highlevel select {
+background: #fff;
+}
+
+
 .light-color {
 	color: #eee;
 }

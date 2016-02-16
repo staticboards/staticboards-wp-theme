@@ -1,6 +1,6 @@
+
 html
 {
-	background: #ffffff;
 	width: 100%;
 	height: 100%;	
 	font-size: 100%;
@@ -11,11 +11,10 @@ body
 	margin: 0 auto;
 	padding: 0 ;
 
-	//font-family: 'Open Sans' !important;
-	font-family: "Lato" !important;
-	font-weight: 200; 
-	font-size: 18px;
-	line-height: 160%;
+	font-family: 'Open Sans' !important;
+	font-weight: 400; 
+	font-size: 20px;
+	line-height: 180%;
 	word-wrap:break-word;
 	
 	color: #222;
@@ -36,20 +35,35 @@ strong {
 
 h1
 {	
-	font-family: 'PT Sans Caption', Arial, sans-serif; font-weight: 400; 
-	line-height: 1.2em;
-	font-size: 36px;
-	padding: 0;
+	//font-family: 'PT Sans Caption', Arial, sans-serif;
+	//font-family: "Lato" !important;
+	font-family: 'Open Sans' !important;
+
+	font-weight: 300;
+	line-height: 1.6em;
+
+	font-size: 60px;
+	color: #111;
 }
 
 h2 {
-	font-weight: 400; 
-	font-size: 30px;
+	font-family: 'Open Sans' !important;
+	font-weight: 300; 
+	font-size: 36px;
 }
 
 h3 {
-	font-weight: 400; 
-	font-size: 24px;
+	font-family: 'Open Sans' !important;
+	font-weight: 300; 
+	font-size: 28px;
+}
+h4{
+	font-size: 22px;
+}
+
+
+h1,h2,h3 {
+	color: #222;
 }
 
 h4, h5, h6 {
@@ -57,28 +71,56 @@ h4, h5, h6 {
 	font-weight: normal;
 }
 
+
+/* FORMS */
+label { padding:0; margin:0; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
+input, textarea { font-size:1em; }
+input[type=text], input[type=password], input[type=input], 
+input[type=tel], input[type=url], input[type=email], 
+input[type=number], input[type=range], input[type=search], input[type=color], 
+input[type=time], input[type=week], input[type=month], input[type=date], input[type=datetime], 
+textarea, select {border:1px solid #ddd; padding:8px 6px; margin:0; width:100%; background:#f5f5f5; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; -webkit-appearance:none;}
+input[type=submit] { width:auto; -webkit-appearance:none; }
+body select { background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAFCAYAAACn39dKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAD5JREFUeNpiYGBgmMmAG8z8//8/A7GYCaYJm0EMJAKQYelYNMPY6aQYxojHJWCDQM4nxWUMWFyRzkAGAAgwAGMTKhZAxxJyAAAAAElFTkSuQmCC'); background-repeat:no-repeat; background-position:right; }
+
+/* BUTTONS */
+.button, .button:visited, input[type=submit] { display:inline-block; width:auto; border:1px solid #888; border:1px solid rgba(0,0,0,0.3); margin:5px 0; padding:12px 15px; color:#fff; text-align:center; text-shadow:0 -1px 0 rgba(0, 0, 0, 0.5); border-radius:2px; cursor:pointer; background:#ccc; background:-moz-linear-gradient(top, #ccc 0%, #aaa 100%); background:-webkit-linear-gradient(top, #ccc 0%,#aaa 100%); background:linear-gradient(to bottom, #ccc 0%,#aaa 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccc', endColorstr='#aaa',GradientType=0 ); }
+.button:link { color:#fff; text-decoration:none; }
+.button:hover, input[type=submit]:hover {background:#ccc; text-decoration:none;}
+.button.button-small { font-size:0.9em; padding:5px 10px; margin:5px 0; }
+.button.button-medium { font-size:1.2em; padding:15px 20px; margin:5px 0; }
+.button.button-large { font-size:1.8em; padding:20px 30px; margin:10px 0; }
+.button.button-left { float:left; margin:0 30px 10px 0; }
+.button.button-right { float:right; margin:0 0 10px 30px; }
+.button.button-center { display:block; clear:both; float:none; margin:0 0 30px; width:100%; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
+.button.button-center:last-child { margin-bottom:0; }
+/* SHORTCODE CUSTOM STYLING */
+.button, .button:visited, input[type=submit] { border-radius:3px; border:none; text-shadow:none; background:#00AAE9; border-color:#e0e0e0; }
+.button:hover, input[type=submit]:hover { background:#0585B5; }
+
+
+
 a {
 	text-decoration: none;
-	font-weight: 600;
 	outline: none;
+	color: #00AAE9;
 }
 
 a:link { 
 	text-decoration: none;
-	color: #444;
+	color: #00AAE9;
 	}
 a:visited {
 	text-decoration: none;
-	color: #444;
+	color: #00AAE9;
 	}
 a:hover {
 	text-decoration: underline;
-	font-weight: 700;
+	color: #00AAE9;
 	}
 a:active {
 	text-decoration: underline;
-	font-weight: 700;
-	color: #666;
+	color: #00AAE9;
 	}
 
 a img {
@@ -256,8 +298,7 @@ a.flatbutton:hover {
 
 	.pagewidth
 	{
-		max-width: 1200px;
-		//max-width: 1310px;	
+		max-width: 1310px;	
 
 		margin-right: auto;
 		margin-left: auto;
@@ -265,7 +306,7 @@ a.flatbutton:hover {
 
 	.postwidth
 	{
-		max-width: 730px;	
+		max-width: 1310px;	
 
 		margin-right: auto;
 		margin-left: auto;
@@ -277,4 +318,9 @@ a.flatbutton:hover {
 		max-width: 100%;
 	}
 
+}
+
+main
+{
+	margin-bottom: 6em;
 }

@@ -4,9 +4,88 @@
 
 .entry-excerpt
 {
-	background-color: red;
 }
 
 .entry-body
 {
 }
+
+.comments-area
+{
+	margin-top:6em;
+}
+
+.comments-title
+{
+	color: #666;
+}
+
+.comment-list
+{
+	margin: 0;
+	padding: 0;
+}
+
+ul.children
+{
+	margin: 1em 0px;
+	padding: 0;
+}
+
+li.comment
+{
+	list-style-type: none;
+	padding: 1em;
+	margin-bottom: 3em;
+}
+
+.comments-area .depth-1
+{
+	border: 1px solid #e5e5e5;
+	background-color: #FBFBFB;
+}
+
+.comments-area .depth-2
+{
+	border: 1px solid #e0e0e0;
+	background-color: #F8F8F8;
+}
+
+.comments-area .depth-3
+{
+	border: 1px solid #e0e0e0;
+	background-color: #F8F8F8;
+}
+
+.comment-body
+{
+}
+
+.comment-author
+{
+}
+
+.comment-author img
+{
+	margin: 15px;
+}
+
+.comment-notes
+{
+	display: none;
+}
+
+.comment-respond label
+{
+    display: block;
+    padding: 5px 0;	
+}
+
+.comment-respond textarea
+{
+    height: 200px;
+    max-height: 400px;
+    min-height: 200px;
+    resize: vertical;
+}
+

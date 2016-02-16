@@ -99,12 +99,23 @@ function enqueue_staticboards_styles(){
 add_action( 'wp_enqueue_scripts', 'enqueue_staticboards_styles' );
 
 add_theme_support( 'nav-menus' );
+add_theme_support( 'title-tag' );
+
 if ( function_exists( 'register_nav_menus' ) ) {
     register_nav_menus(array('topnavbar' => __('Top Navbar','staticboards') ));
 }
 
 function staticboards_widgets_init() {
 
+    register_sidebar( array(
+        'name'          => __( 'Post SideBar', 'staticboards' ),
+        'id'            => 'sidebar-post',
+        'description'   => __( 'Appears at the side of the content on posts.', 'staticboards' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<header><h3 class="widget-title">',
+        'after_title'   => '</h3></header>',
+    ) );
 
     register_sidebar( array(
         'name'          => __( 'Content Bottom CTA 1', 'staticboards' ),
