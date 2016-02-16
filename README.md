@@ -1,3 +1,5 @@
+MENU items need to have the css class 'col-sm-2'
+
 header.php : solo el head, y abrimos el body
 footer.php : user section y cerramos el body
 sidebar.php : ahora mismo está vacio

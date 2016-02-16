@@ -9,7 +9,8 @@
   </div>
 
  <?php wp_nav_menu( array(
-  'menu' => 'Top Navbar','menu_class' => '','menu_id' => '',
+  'theme_location' => 'topnavbar','menu' => 'Top Navbar',
+  'menu_class' => '','menu_id' => '',
   'container' => 'nav' , 'container_class' => '' , 'container_id' => 'navigation' )) ;?>
 
   </div>

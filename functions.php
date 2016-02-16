@@ -100,7 +100,7 @@ add_action( 'wp_enqueue_scripts', 'enqueue_staticboards_styles' );
 
 add_theme_support( 'nav-menus' );
 if ( function_exists( 'register_nav_menus' ) ) {
-    register_nav_menus(array('navbar' => __('Top Navbar','staticboards') ));
+    register_nav_menus(array('topnavbar' => __('Top Navbar','staticboards') ));
 }
 
 function staticboards_widgets_init() {
