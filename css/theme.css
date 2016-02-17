@@ -12,10 +12,9 @@ body
 	padding: 0 ;
 
 	font-family: 'Open Sans' !important;
+	//font-family: 'Droid Serif',serif;
 	font-weight: 400; 
-	font-size: 20px;
-	line-height: 180%;
-	word-wrap:break-word;
+	font-size: 21px;
 	
 	color: #222;
 
@@ -23,14 +22,21 @@ body
 
 	position: relative;
 	z-index: 1;
+
+
+	word-wrap:break-word;
+	letter-spacing: -0.1pt;
+	line-height: 160%;	
+  word-spacing: +1px;
+
 }
 
 p {
 	margin: 0 0 1.3em;
 }
 
-strong {
-	font-weight: 600; 
+strong , b {
+	font-weight: 700; 
 }
 
 h1
@@ -38,25 +44,31 @@ h1
 	//font-family: 'PT Sans Caption', Arial, sans-serif;
 	//font-family: "Lato" !important;
 	font-family: 'Open Sans' !important;
+	font-weight: 700;
+	font-size: 300%;
 
-	font-weight: 300;
-	line-height: 1.6em;
-
-	font-size: 60px;
-	color: #111;
+	line-height: 200%;
+	letter-spacing: -1pt;
 }
 
 h2 {
 	font-family: 'Open Sans' !important;
-	font-weight: 300; 
-	font-size: 36px;
+	font-weight: 400; 
+	font-size: 200%;
+
+	line-height: 150%;
+	letter-spacing: -1pt;
 }
 
 h3 {
 	font-family: 'Open Sans' !important;
 	font-weight: 300; 
-	font-size: 28px;
+	font-size: 150%;
+
+	line-height: 150%;
+	letter-spacing: -1pt;
 }
+
 h4{
 	font-size: 22px;
 }
@@ -64,6 +76,7 @@ h4{
 
 h1,h2,h3 {
 	color: #222;
+	word-wrap:normal;
 }
 
 h4, h5, h6 {
@@ -71,6 +84,14 @@ h4, h5, h6 {
 	font-weight: normal;
 }
 
+/* theme color */
+/* https://color.adobe.com/Flat-UI-color-theme-2469224/ */
+
+.themecolor0 { color: #2C3E50; }
+.themecolor1 { color: #E74C3C; }
+.themecolor2 { color: #ECF0F1; }
+.themecolor3 { color: #3498DB; }
+.themecolor4 { color: #2980B9; }
 
 /* FORMS */
 label { padding:0; margin:0; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
@@ -79,12 +100,19 @@ input[type=text], input[type=password], input[type=input],
 input[type=tel], input[type=url], input[type=email], 
 input[type=number], input[type=range], input[type=search], input[type=color], 
 input[type=time], input[type=week], input[type=month], input[type=date], input[type=datetime], 
-textarea, select {border:1px solid #ddd; padding:8px 6px; margin:0; width:100%; background:#f5f5f5; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; -webkit-appearance:none;}
+textarea, select {
+	background:#f5f5f5;
+	border:1px solid #ddd;
+	padding:8px 6px; margin:0;
+	width:100%;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-appearance:none;
+}
 input[type=submit] { width:auto; -webkit-appearance:none; }
 body select { background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAFCAYAAACn39dKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAD5JREFUeNpiYGBgmMmAG8z8//8/A7GYCaYJm0EMJAKQYelYNMPY6aQYxojHJWCDQM4nxWUMWFyRzkAGAAgwAGMTKhZAxxJyAAAAAElFTkSuQmCC'); background-repeat:no-repeat; background-position:right; }
 
-/* BUTTONS */
-.button, .button:visited, input[type=submit] { display:inline-block; width:auto; border:1px solid #888; border:1px solid rgba(0,0,0,0.3); margin:5px 0; padding:12px 15px; color:#fff; text-align:center; text-shadow:0 -1px 0 rgba(0, 0, 0, 0.5); border-radius:2px; cursor:pointer; background:#ccc; background:-moz-linear-gradient(top, #ccc 0%, #aaa 100%); background:-webkit-linear-gradient(top, #ccc 0%,#aaa 100%); background:linear-gradient(to bottom, #ccc 0%,#aaa 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccc', endColorstr='#aaa',GradientType=0 ); }
 .button:link { color:#fff; text-decoration:none; }
 .button:hover, input[type=submit]:hover {background:#ccc; text-decoration:none;}
 .button.button-small { font-size:0.9em; padding:5px 10px; margin:5px 0; }
@@ -95,32 +123,49 @@ body select { background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUg
 .button.button-center { display:block; clear:both; float:none; margin:0 0 30px; width:100%; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
 .button.button-center:last-child { margin-bottom:0; }
 /* SHORTCODE CUSTOM STYLING */
-.button, .button:visited, input[type=submit] { border-radius:3px; border:none; text-shadow:none; background:#00AAE9; border-color:#e0e0e0; }
-.button:hover, input[type=submit]:hover { background:#0585B5; }
+.button, .button:visited, input[type=submit] {
 
 
+	color:#fff;
+	background:#2980B9;
+
+	border:1px solid #F2E9D8;
+	border-radius:6px; 
+
+//	text-shadow:0 -1px 0 rgba(0, 0, 0, 0.5);
+
+	margin:5px 0; padding:12px 15px;
+	text-align:center;
+	display:inline-block; width:auto;
+	cursor:pointer;
+}
+
+.button:hover, input[type=submit]:hover {
+	color:#fff;
+	background:#3498DB;
+}
 
 a {
 	text-decoration: none;
 	outline: none;
-	color: #00AAE9;
+	color: #2980B9;
 }
 
 a:link { 
 	text-decoration: none;
-	color: #00AAE9;
+	color: #2980B9;
 	}
 a:visited {
 	text-decoration: none;
-	color: #00AAE9;
+	color: #2980B9;
 	}
 a:hover {
 	text-decoration: underline;
-	color: #00AAE9;
+	color: #2980B9;
 	}
 a:active {
 	text-decoration: underline;
-	color: #00AAE9;
+	color: #2980B9;
 	}
 
 a img {
@@ -133,56 +178,6 @@ img {
 
 li {
 	list-style-type: square;	
-}
-
-
-label , .form-control
-{
-	font-weight: 400;
-}
-
-a.button {
-	font-size: 12px;
-	background: #12AEE8 url('../static/css/images/btn_bkg.png') repeat-x;
-	display: inline-block;
-	color: white;
-	text-decoration: none;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.3);
-	position: relative;
-	cursor: pointer;
-	padding: 5px 15px 5px;
-	border: 1px solid rgba(0, 0, 0, .2);
-	border-radius: 5px;
-	margin: 0 5px 0 0;
-	line-height: normal !important;
-}
-
-a.button-danger {	
-	background: #C12E2A url('../static/css/images/btn_bkg.png') repeat-x;
-	border: 1px solid #AC2925;
-}
-
-a.floatright {
-	float:right;
-}
-
-a.flatbutton {
-	color: #444;
-	background-color: #eee;
-	display: inline-block;
-	text-decoration: none;
-	font-weight: 600;
-	padding: 0.4em 1em;
-	margin: 0.4em 1em;
-
-    border: 1px #ededed solid;
-    border-radius: 5px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-
-}
-a.flatbutton:hover {
-	text-decoration: underline;
 }
 
 /* QUOTE */
@@ -318,9 +313,4 @@ a.flatbutton:hover {
 		max-width: 100%;
 	}
 
-}
-
-main
-{
-	margin-bottom: 6em;
 }
