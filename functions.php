@@ -1,5 +1,39 @@
 <?php
 
+if ( ! function_exists( 'twentysixteen_entry_meta' ) ) :
+
+function staticboards_entry_meta() {
+
+    printf ( '<a href="%1s">%2s</a>' , esc_url( get_permalink() ) , __( 'Read more...', 'staticboards' ) );
+
+    //printf( '<span class=""><a href="%s" rel="bookmark">', , '</a></h2>' );
+
+
+    if ( ! is_singular() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+        echo '<span class="comments-link">';
+        comments_popup_link( '' ,
+                __( '1 response', 'staticboards' ) ,
+                __( '% responses', 'staticboards' ) 
+                );
+        echo '</span>';
+    }
+
+    if ( 'post' === get_post_type() ) {
+        staticboards_entry_taxonomies();
+    }
+}
+endif;
+
+if ( ! function_exists( 'staticboards_entry_taxonomies' ) ) :
+
+function staticboards_entry_taxonomies() {
+    $categories_list = get_the_category_list( _x( ' / ', 'Used between list items, there is a space after.', 'staticboards' ) );
+    if ( $categories_list ) {
+        printf( '<span class="cat-links">%1$s</span>',$categories_list);
+    }
+}
+endif;
+
 if ( ! function_exists( 'staticboards_post_thumbnail' ) ) :
 function staticboards_post_thumbnail() {
 

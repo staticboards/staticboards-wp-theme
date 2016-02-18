@@ -7,6 +7,17 @@
 {
 }
 
+.entry-title a
+{
+	color: #222;
+}
+
+.entry-title a:hover
+{
+	color: #2980B9;
+	text-decoration: none;
+}
+
 .entry-excerpt
 {
 }
@@ -116,13 +127,39 @@ li.comment
 
 	padding-bottom: 1.5em;
 	margin-bottom: 3em;
+	font-size: 90%;
+	line-height: 1.3em;
 }
 
-.entrylist-header , .entrylist-content
+.entrylist-header , .entrylist-content , .entrylist-footer
 {
-	padding: 1em 2em;
+	padding: 15pt 30pt;
 }
 
+.entrylist-footer
+{
+	font-weight: 300;
+	font-size: 14px;
+	color: #666;
+	text-transform: uppercase;
+}
+
+.entrylist-footer a
+{
+	color: #666;
+}
+
+.entrylist-footer .cat-links
+{
+	float:right;
+	margin-left: 1em;
+}
+
+.entrylist-footer .comments-link
+{
+	float:right;	
+	margin-left: 1em;
+}
 
 .content-none-header
 {

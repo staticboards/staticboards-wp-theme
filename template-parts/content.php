@@ -10,15 +10,16 @@
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 	</header>
 
+	<section>
 	<div class="entrylist-content">
 		<?php staticboards_excerpt(); ?>
 	</div><!-- .entry-content -->
+	</section>
 
-
-	<!--
-	<footer class="entry-footer">
-	twentysixteen_entry_meta();
+	<footer>
+	<div class="entrylist-footer">
+	<?php staticboards_entry_meta(); ?>
+	</div>
 	</footer>
-	-->
 
 </article><!-- #post-## -->
