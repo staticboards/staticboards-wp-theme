@@ -59,7 +59,7 @@ function register_staticboards_styles(){
     wp_register_style( 'staticboards-css-droid-serif', get_template_directory_uri() . '/static/css/droid-serif.css', array(), false, 'screen' );
     //wp_register_style( 'staticboards-css-ptsans', get_template_directory_uri() . '/static/css/ptsans.css', array(), false, 'screen' );
     //wp_register_style( 'staticboards-css-lato', get_template_directory_uri() . '/static/css/lato.css', array(), false, 'screen' );
-    //wp_register_style( 'staticboards-css-font-awesome', get_template_directory_uri() . '/static/css/font-awesome-4.3.0.min.css', array(), false, 'screen' );
+    wp_register_style( 'staticboards-css-font-awesome', get_template_directory_uri() . '/static/css/font-awesome-4.3.0.min.css', array(), false, 'screen' );
 
     }
 
@@ -107,7 +107,7 @@ function enqueue_staticboards_styles(){
     wp_enqueue_style( 'staticboards-css-droid-serif' );
     //wp_enqueue_style( 'staticboards-css-ptsans' );
     //wp_enqueue_style( 'staticboards-css-lato' );
-    //wp_enqueue_style( 'staticboards-css-font-awesome' );
+    wp_enqueue_style( 'staticboards-css-font-awesome' );
     }
 
     if ( function_exists( 'wp_enqueue_style' ) ) {

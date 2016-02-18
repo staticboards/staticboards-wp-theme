@@ -21,28 +21,74 @@
 {
 	text-transform:uppercase;
 	word-wrap:normal;
-	font-weight: 400 ;
+	font-weight: 700 ;
+	font-size: 14px;
 	padding: 0; margin: 0;
+	float:right;
 }
 
 #header-desktop #navigation li
 {
 	list-style-type: none;	
+	display: inline;
+	margin-right: 2em;
 }
 
 #header-desktop #navigation a {
-	font-weight: 400;
-	color: #666;
+	font-weight: 700;
+	font-size: 14px;
+	color: #999;
 	text-decoration: none;
 	display: inline;
 	border-top: 2px solid #eee;
 }
 
-#header-desktop #navigation .active a  {
-	border-top: 1px solid #12aee8 ;
-}
-
 #header-desktop #navigation a:hover {
 	color: #333;
 	text-decoration: none;
+	border-top: 1px solid #12aee8 ;
+}
+
+.search-form
+{
+	text-transform:uppercase;
+	word-wrap:normal;
+	font-weight: 400 ;
+	font-size: 14px;
+}
+
+.search-field-wrap
+{
+	overflow: hidden; padding-right: .5em;
+}
+
+.search-form input
+{
+	padding: 0 6px;
+	background-color: #fff;
+}
+
+.search-form input:focus
+{
+	background-color: #fafafa;
+}
+
+.search-form button , .search-form button:link , .search-form button:visited , .search-form button:focus
+{
+	float: right;
+  color: #999;
+  text-shadow: -1px 1px #f0f0f0;
+  background-color: #fff;
+  box-shadow: none;
+  border: none;
+}
+
+.search-form button:hover
+{
+  color: #333;
+}
+
+.search-form button:focus
+{
+	outline: none;	
 }

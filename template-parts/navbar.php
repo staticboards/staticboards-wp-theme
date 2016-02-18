@@ -8,10 +8,16 @@
   <a href='/'></a>
   </div>
 
- <?php wp_nav_menu( array(
-  'theme_location' => 'topnavbar','menu' => 'Top Navbar',
-  'menu_class' => '','menu_id' => '',
-  'container' => 'nav' , 'container_class' => '' , 'container_id' => 'navigation' )) ;?>
+  <div class="col-sm-8">
+   <?php wp_nav_menu( array(
+    'theme_location' => 'topnavbar','menu' => 'Top Navbar',
+    'menu_class' => '','menu_id' => '',
+    'container' => 'nav' , 'container_class' => '' , 'container_id' => 'navigation' )) ;?>
+  </div>
+
+  <div class="col-sm-2">
+  <?php get_search_form(); ?>
+  </div>
 
   </div>
 

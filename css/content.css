@@ -122,3 +122,17 @@ li.comment
 {
 	padding: 1em 2em;
 }
+
+
+.content-none-header
+{
+}
+
+.content-none-legend
+{
+}
+
+.content-none-search
+{
+	margin: 3em 6em 10em 6em;
+}
