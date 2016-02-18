@@ -2,6 +2,8 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+			<?php staticboards_post_thumbnail () ; ?>
+
 			<div class="entry-body">
 				<?php
 				the_content();
