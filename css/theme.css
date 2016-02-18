@@ -85,6 +85,41 @@ h4, h5, h6 {
 	font-weight: normal;
 }
 
+a {
+	text-decoration: none;
+	outline: none;
+	color: #2980B9;
+}
+
+a:link { 
+	text-decoration: none;
+	color: #2980B9;
+	}
+a:visited {
+	text-decoration: none;
+	color: #2980B9;
+	}
+a:hover {
+	text-decoration: underline;
+	color: #2980B9;
+	}
+a:active {
+	text-decoration: underline;
+	color: #2980B9;
+	}
+
+a img {
+	border: none;
+}
+
+img {
+	margin: 0;
+}
+
+li {
+	list-style-type: square;	
+}
+
 /* theme color */
 /* https://color.adobe.com/Flat-UI-color-theme-2469224/ */
 
@@ -123,9 +158,9 @@ body select { background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUg
 .button.button-right { float:right; margin:0 0 10px 30px; }
 .button.button-center { display:block; clear:both; float:none; margin:0 0 30px; width:100%; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
 .button.button-center:last-child { margin-bottom:0; }
+
 /* SHORTCODE CUSTOM STYLING */
 .button, .button:visited, input[type=submit] {
-
 
 	color:#fff;
 	background:#2980B9;
@@ -144,41 +179,6 @@ body select { background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUg
 .button:hover, input[type=submit]:hover {
 	color:#fff;
 	background:#3498DB;
-}
-
-a {
-	text-decoration: none;
-	outline: none;
-	color: #2980B9;
-}
-
-a:link { 
-	text-decoration: none;
-	color: #2980B9;
-	}
-a:visited {
-	text-decoration: none;
-	color: #2980B9;
-	}
-a:hover {
-	text-decoration: underline;
-	color: #2980B9;
-	}
-a:active {
-	text-decoration: underline;
-	color: #2980B9;
-	}
-
-a img {
-	border: none;
-}
-
-img {
-	margin: 0;
-}
-
-li {
-	list-style-type: square;	
 }
 
 /* QUOTE */

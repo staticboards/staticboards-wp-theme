@@ -12,7 +12,30 @@
 
 .bg-deskdark {
   background: url('../static/css/images/deskdark-bg.jpg') repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+  color: #ECF0F1;	
 }
+
+.bg-deskdark p , .bg-deskdark h3
+{
+  color: #ECF0F1;	
+}
+
+.bg-deskdark input
+{
+  color: #222;	
+}
+
+.bg-deskdark .button, .button:visited, .bg-deskdark input[type=submit] {
+	color:#fff;
+	background:#2C3E50;
+	border:1px solid #2C3E50;
+}
+
+.bg-deskdark .button:hover, .bg-deskdark  input[type=submit]:hover {
+	color:#fff;
+	background:#3498DB;
+}
+
 
 .bg-skyline {
   background: url('../static/css/images/skyline-bg.jpg') repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);

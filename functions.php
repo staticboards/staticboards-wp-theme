@@ -50,7 +50,6 @@ function register_staticboards_styles(){
     wp_register_style( 'staticboards-css-productos', get_template_directory_uri() . '/css/productos.css', array(), false, 'screen' );
 
     wp_register_style( 'staticboards-css-breadcrumb', get_template_directory_uri() . '/css/breadcrumb.css', array(), false, 'screen' );
-    wp_register_style( 'staticboards-css-mailchimp', get_template_directory_uri() . '/css/mailchimp.css', array(), false, 'screen' );
     wp_register_style( 'staticboards-css-cart', get_template_directory_uri() . '/css/cart.css', array(), false, 'screen' );
 
     wp_register_style( 'staticboards-css-superfish', get_template_directory_uri() . '/static/css/superfish/superfish.css', array(), false, 'screen' );
@@ -100,7 +99,6 @@ function enqueue_staticboards_styles(){
     wp_enqueue_style( 'staticboards-css-productos' );
 
     wp_enqueue_style( 'staticboards-css-breadcrumb' );
-    wp_enqueue_style( 'staticboards-css-mailchimp' );
     wp_enqueue_style( 'staticboards-css-cart' );
 
     wp_enqueue_style( 'staticboards-css-superfish' );
