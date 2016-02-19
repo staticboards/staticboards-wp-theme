@@ -1,7 +1,8 @@
 #header-desktop {
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
-	background: $purewhite;	
+	background: $background0;
+	@include font-ui-text();
 }
 
 #header-desktop #sblogo {
@@ -19,10 +20,6 @@
 
 #header-desktop #navigation ul
 {
-	text-transform:uppercase;
-	word-wrap:normal;
-	font-weight: 700 ;
-	font-size: 14px;
 	padding: 0; margin: 0;
 	float:right;
 }
@@ -35,12 +32,12 @@
 }
 
 #header-desktop #navigation a {
-	font-weight: 700;
-	font-size: 14px;
 	color: $textlight;
 	text-decoration: none;
 	display: inline;
 	border-top: 2px solid $textlight;
+
+	@include font-ui-text();
 }
 
 #header-desktop #navigation a:hover {

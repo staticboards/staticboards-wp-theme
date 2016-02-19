@@ -13,13 +13,14 @@
 	a
 	{
 		color: $textblack;
+
+		&:hover
+		{
+			color: $color4;
+			text-decoration: none;			
+		}
 	}
 
-	a:hover
-	{
-		color: $color4;
-		text-decoration: none;
-	}
 
 }
 
@@ -148,14 +149,14 @@ li.comment
 
 .entrylist-footer
 {
-	font-weight: 300;
-	font-size: 14px;
+	@include font-ui-light();
+
 	color: $textgray;
-	text-transform: uppercase;
 
 	a
 	{
 		color: $textgray;
+		@include font-ui-light();
 	}
 
 	.cat-links

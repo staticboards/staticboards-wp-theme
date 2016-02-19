@@ -1,3 +1,22 @@
+@mixin bottom-gravity-form ()
+{
+	li {
+		list-style-type: none;	
+	}
+
+	label
+	{
+		margin-top: 1em;
+		margin-bottom: 0.5em;
+	}
+
+	.gfield_required {
+	    color: $color1;
+	    margin-left: 4px;
+	}
+}
+
+
 .bgtitlesection
 {
 	padding-top: 1em;
@@ -10,42 +29,31 @@
 
   background: url($highlevel) repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
 
-	input[type=text], input[type=password], input[type=input], 
-	input[type=tel], input[type=url], input[type=email], 
-	input[type=number], input[type=range], input[type=search], input[type=color], 
-	input[type=time], input[type=week], input[type=month], input[type=date],  input[type=datetime], 
-	textarea, select {
+	@include inputtextselector()
+	{
 		background: $form-background0;
 	}
 
+	@include bottom-gravity-form ();
 }
 
 
 .bg-deskdark {
-  background: url($deskdark) repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
-  color: $color2;	
 
-  p , h3
+  background: url($deskdark) repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+
+  h1,h2,h3,p,label
   {
-  	color: $color2;	  	
+	  color: $color2;	
   }
 
-	input
+	@include inputtextselector()
 	{
-	  color: $textblack;
-	  background: $form-background0;
+		background: $form-background0;
+		color: $textblack;
 	}
 
-	.button, .button:visited, input[type=submit] {
-		color:$color2;
-		background:$color0;
-		border:1px solid $color0;
-	}
-
-	.button:hover, input[type=submit]:hover {
-		color:$color2;
-		background:$color3;
-	}
+	@include bottom-gravity-form ();
 
 }
 
@@ -67,19 +75,19 @@
 }
 
 #footer {
+
 	padding: 0.5em 0;
+
+	color: $color2;
 	background-color: $color6;
-	background-image: none;
+
 	font-style: italic;
-	line-height: 1;
-	font-size: 80%;
-	font-weight: 300;
-}
+	text-align: center;
 
-#footer a {
-	text-decoration: none;
-}
+	@include font-sans-light ();
 
-#footer , #footer a {
+	a {
+		text-decoration: none;
 		color: $color2;
+	}
 }
