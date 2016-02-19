@@ -66,28 +66,6 @@ function register_staticboards_styles(){
     wp_register_style( 'staticboards-css-bootstrap-screen', get_template_directory_uri() . '/static/css/bootstrap.min.css', array(), false, 'screen' );
     wp_register_style( 'staticboards-css-bootstrap-print', get_template_directory_uri() . '/static/css/bootstrap.min.css', array(), false, 'print' );
 
-    wp_register_style( 'staticboards-css-theme', get_template_directory_uri() . '/css/theme.css', array(), false, 'screen' );
-    wp_register_style( 'staticboards-css-widgets', get_template_directory_uri() . '/css/widgets.css', array(), false, 'screen' );
-    wp_register_style( 'staticboards-css-nav', get_template_directory_uri() . '/css/nav.css', array(), false, 'screen' );
-    wp_register_style( 'staticboards-css-responsive-nav', get_template_directory_uri() . '/css/responsive-nav.css', array(), false, 'screen' );
-    wp_register_style( 'staticboards-css-footer', get_template_directory_uri() . '/css/footer.css', array(), false, 'screen' );
-    wp_register_style( 'staticboards-css-cycle', get_template_directory_uri() . '/css/cycle.css', array(), false, 'screen' );
-
-    wp_register_style( 'staticboards-css-content', get_template_directory_uri() . '/css/content.css', array(), false, 'screen' );
-    wp_register_style( 'staticboards-css-index', get_template_directory_uri() . '/css/index.css', array(), false, 'screen' );
-    wp_register_style( 'staticboards-css-page', get_template_directory_uri() . '/css/page.css', array(), false, 'screen' );
-    wp_register_style( 'staticboards-css-front-page', get_template_directory_uri() . '/css/front-page.css', array(), false, 'screen' );
-    wp_register_style( 'staticboards-css-single', get_template_directory_uri() . '/css/single.css', array(), false, 'screen' );
-
-
-    wp_register_style( 'staticboards-css-producto', get_template_directory_uri() . '/css/producto.css', array(), false, 'screen' );
-    wp_register_style( 'staticboards-css-productos', get_template_directory_uri() . '/css/productos.css', array(), false, 'screen' );
-
-    wp_register_style( 'staticboards-css-breadcrumb', get_template_directory_uri() . '/css/breadcrumb.css', array(), false, 'screen' );
-    wp_register_style( 'staticboards-css-cart', get_template_directory_uri() . '/css/cart.css', array(), false, 'screen' );
-
-    wp_register_style( 'staticboards-css-superfish', get_template_directory_uri() . '/static/css/superfish/superfish.css', array(), false, 'screen' );
-
 
     wp_register_style( 'staticboards-css-opensans', get_template_directory_uri() . '/static/css/opensans.css', array(), false, 'screen' );
     wp_register_style( 'staticboards-css-droid-serif', get_template_directory_uri() . '/static/css/droid-serif.css', array(), false, 'screen' );
@@ -95,6 +73,7 @@ function register_staticboards_styles(){
     //wp_register_style( 'staticboards-css-lato', get_template_directory_uri() . '/static/css/lato.css', array(), false, 'screen' );
     wp_register_style( 'staticboards-css-font-awesome', get_template_directory_uri() . '/static/css/font-awesome-4.3.0.min.css', array(), false, 'screen' );
 
+    wp_register_style( 'staticboards-css-min', get_template_directory_uri() . '/style.min.css', array(), false, 'screen' );
     }
 
     if ( function_exists( 'wp_register_script' ) ) {
@@ -116,32 +95,13 @@ function enqueue_staticboards_styles(){
     wp_enqueue_style( 'staticboards-css-bootstrap-screen' );
     wp_enqueue_style( 'staticboards-css-bootstrap-print' );
 
-    wp_enqueue_style( 'staticboards-css-theme' );
-    wp_enqueue_style( 'staticboards-css-widgets' );
-    wp_enqueue_style( 'staticboards-css-nav' );
-    wp_enqueue_style( 'staticboards-css-responsive-nav' );
-    wp_enqueue_style( 'staticboards-css-footer' );
-    wp_enqueue_style( 'staticboards-css-cycle' );
-
-    wp_enqueue_style( 'staticboards-css-content' );
-    wp_enqueue_style( 'staticboards-css-index' );
-    wp_enqueue_style( 'staticboards-css-page' );
-    wp_enqueue_style( 'staticboards-css-front-page' );
-    wp_enqueue_style( 'staticboards-css-single' );
-
-    wp_enqueue_style( 'staticboards-css-producto' );
-    wp_enqueue_style( 'staticboards-css-productos' );
-
-    wp_enqueue_style( 'staticboards-css-breadcrumb' );
-    wp_enqueue_style( 'staticboards-css-cart' );
-
-    wp_enqueue_style( 'staticboards-css-superfish' );
-
     wp_enqueue_style( 'staticboards-css-opensans' );
     wp_enqueue_style( 'staticboards-css-droid-serif' );
     //wp_enqueue_style( 'staticboards-css-ptsans' );
     //wp_enqueue_style( 'staticboards-css-lato' );
     wp_enqueue_style( 'staticboards-css-font-awesome' );
+
+    wp_enqueue_style( 'staticboards-css-min' );
     }
 
     if ( function_exists( 'wp_enqueue_style' ) ) {
