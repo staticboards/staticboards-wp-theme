@@ -1,0 +1,39 @@
+.search-form
+{
+	text-transform:uppercase;
+	word-wrap:normal;
+	font-weight: 400 ;
+	font-size: 14px;
+
+	@include inputtextselector()
+	{
+		padding: 0 6px;
+		background-color: $form-background0;
+
+		&:focus
+		{
+			background-color: $form-background0-focus;			
+		}
+
+	}
+
+	button
+	{
+		float: right;
+	  color: $textlight;
+	  text-shadow: -1px 1px $background0-primary3;
+	  background-color: $background0;
+	  box-shadow: none;
+	  border: none;
+	}
+
+	button:hover
+	{
+	  color: $textblack;
+	}
+}
+
+.search-field-wrap
+{
+	overflow: hidden; padding-right: .5em;
+}

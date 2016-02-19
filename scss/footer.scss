@@ -7,48 +7,50 @@
 /* BACKGROUNDS */
 
 .bg-highlevel {
-  background: url('static/css/images/highlevel-bg.jpg') repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+
+  background: url($highlevel) repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+
+	input[type=text], input[type=password], input[type=input], 
+	input[type=tel], input[type=url], input[type=email], 
+	input[type=number], input[type=range], input[type=search], input[type=color], 
+	input[type=time], input[type=week], input[type=month], input[type=date],  input[type=datetime], 
+	textarea, select {
+		background: $form-background0;
+	}
+
 }
+
 
 .bg-deskdark {
-  background: url('static/css/images/deskdark-bg.jpg') repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
-  color: #ECF0F1;	
-}
+  background: url($deskdark) repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+  color: $color2;	
 
-.bg-deskdark p , .bg-deskdark h3
-{
-  color: #ECF0F1;	
-}
+  p , h3
+  {
+  	color: $color2;	  	
+  }
 
-.bg-deskdark input
-{
-  color: #222;	
-}
+	input
+	{
+	  color: $textblack;
+	  background: $form-background0;
+	}
 
-.bg-deskdark .button, .button:visited, .bg-deskdark input[type=submit] {
-	color:#fff;
-	background:#2C3E50;
-	border:1px solid #2C3E50;
-}
+	.button, .button:visited, input[type=submit] {
+		color:$color2;
+		background:$color0;
+		border:1px solid $color0;
+	}
 
-.bg-deskdark .button:hover, .bg-deskdark  input[type=submit]:hover {
-	color:#fff;
-	background:#3498DB;
-}
+	.button:hover, input[type=submit]:hover {
+		color:$color2;
+		background:$color3;
+	}
 
+}
 
 .bg-skyline {
   background: url('static/css/images/skyline-bg.jpg') repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
-}
-
-
-/* FORMS */
-.bg-highlevel input[type=text], .bg-highlevel input[type=password], .bg-highlevel input[type=input], 
-.bg-highlevel input[type=tel], .bg-highlevel input[type=url], .bg-highlevel input[type=email], 
-.bg-highlevel input[type=number], .bg-highlevel input[type=range], .bg-highlevel input[type=search], .bg-highlevel  input[type=color], 
-.bg-highlevel input[type=time], .bg-highlevel input[type=week], .bg-highlevel input[type=month], .bg-highlevel input[type=date], .bg-highlevel input[type=datetime], 
-.bg-highlevel textarea, .bg-highlevel select {
-background: #fff;
 }
 
 
@@ -66,7 +68,7 @@ background: #fff;
 
 #footer {
 	padding: 0.5em 0;
-	background-color: #444;
+	background-color: $color6;
 	background-image: none;
 	font-style: italic;
 	line-height: 1;
@@ -79,5 +81,5 @@ background: #fff;
 }
 
 #footer , #footer a {
-		color: #F2F2F2;
+		color: $color2;
 }

@@ -1,6 +1,19 @@
+
+@import "scss/macro.scss";
+@import "scss/colors.scss";
+@import "scss/assets.scss";
+
+@import "scss/normalize.scss";
+@import "scss/reset.scss";
+
 @import "scss/theme.scss";
 @import "scss/widgets.scss";
+
 @import "scss/nav.scss";
 @import "scss/responsive-nav.scss";
+
+@import "scss/searchform.scss";
+
 @import "scss/footer.scss";
 @import "scss/content.scss";
+

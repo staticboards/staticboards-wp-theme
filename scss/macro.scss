@@ -1,0 +1,22 @@
+@mixin inputtextselector() {
+
+	input[type=text],
+	input[type=password],
+	input[type=input],
+	input[type=tel],
+	input[type=url], 
+	input[type=email], 
+	input[type=number],
+	input[type=range],
+	input[type=search],
+	input[type=color],
+	input[type=time],
+	input[type=week],
+	input[type=month],
+	input[type=date],
+	input[type=datetime],
+	textarea, select
+		{
+        @content;
+    }
+}

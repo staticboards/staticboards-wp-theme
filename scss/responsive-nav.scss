@@ -11,7 +11,7 @@
   width: 60px;
   height: 60px;
   margin-right: auto; margin-left: auto;
-  background-image: url( '../static/css/images/logo.svg' ) ;
+  background-image: url( $logo ) ;
   background-repeat: no-repeat;
   background-size: 100%;
 }
