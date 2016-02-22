@@ -873,6 +873,9 @@ img.img-fullwidth {
   width: 100%;
   height: auto;
 }
+.comments-area {
+  margin-top: 150px;
+}
 .comments-title {
   color: #bbb;
 }
