@@ -188,13 +188,6 @@ audio, canvas, video {
 audio:not([controls]) {
   display: none;
 }
-del {
-  color: #333;
-}
-ins {
-  background: #fff9c0;
-  text-decoration: none;
-}
 hr {
   margin: 24px;
   margin-bottom: 1.71429rem;
@@ -241,44 +234,44 @@ body {
   position: relative;
   z-index: 1;
   font-family: 'Open Sans', sans-serif;
-  font-size: 21px;
+  font-size: 18px;
   letter-spacing: -0.1pt;
   line-height: 1.7em;
   word-spacing: 1px;
   word-wrap: break-word;
   font-weight: 400;
 }
-h1 {
+h1, h1 > a {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  font-size: 300%;
+  font-size: 250%;
   line-height: 1.3em;
   letter-spacing: -1pt;
   word-wrap: normal;
   margin-bottom: 0.5em;
 }
-h2 {
+h2, h2 > a {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 200%;
+  font-weight: 600;
+  font-size: 150%;
   line-height: 1em;
   letter-spacing: -1pt;
   word-wrap: normal;
   margin-bottom: 0.5em;
 }
-h3 {
+h3, h3 > a {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  font-size: 150%;
+  font-size: 135%;
   line-height: 1.5em;
   letter-spacing: -1pt;
   word-wrap: normal;
   margin-bottom: 0.5em;
 }
-h4 {
+h4, h4 > a {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  font-size: 22px;
+  font-size: 110%;
   word-wrap: normal;
 }
 p {
@@ -286,7 +279,7 @@ p {
 }
 label {
   font-family: 'Open Sans', sans-serif;
-  font-size: 21px;
+  font-size: 18px;
   letter-spacing: -0.1pt;
   line-height: 1.7em;
   word-spacing: 1px;
@@ -301,7 +294,7 @@ h4, h5, h6 {
 }
 a {
   font-family: 'Open Sans', sans-serif;
-  font-size: 21px;
+  font-size: 18px;
   letter-spacing: -0.1pt;
   line-height: 1.7em;
   word-spacing: 1px;
@@ -335,6 +328,13 @@ img {
 li {
   list-style-type: square;
 }
+del {
+  color: #222;
+}
+ins {
+  background: #fff;
+  text-decoration: none;
+}
 label {
   padding: 0;
   margin: 0;
@@ -345,7 +345,7 @@ label {
 input[type=text], input[type=password], input[type=input], input[type=tel],
 input[type=url], input[type=email], input[type=number], input[type=range],
 input[type=search], input[type=color], input[type=time], input[type=week],
-input[type=month], input[type=date], input[type=datetime], textarea, select {
+input[type=month], input[type=date], input[type=datetime], textarea {
   padding: 8px 6px;
   margin: 0;
   width: 100%;
@@ -361,7 +361,7 @@ input[type=tel]:focus, input[type=url]:focus, input[type=email]:focus,
 input[type=number]:focus, input[type=range]:focus, input[type=search]:focus,
 input[type=color]:focus, input[type=time]:focus, input[type=week]:focus,
 input[type=month]:focus, input[type=date]:focus, input[type=datetime]:focus,
-textarea:focus, select:focus {
+textarea:focus {
   background-color: #F8F8F8;
 }
 input[type=submit] {
@@ -487,33 +487,58 @@ input[type=submit] {
   }
 }
 #widgets-bottom {
-  font-size: 18px;
-  font-weight: 300;
   background-image: none;
   background-color: #262626;
   color: #ECF0F1;
   padding-bottom: 13em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 0.5pt;
+  line-height: 1.7em;
+  word-spacing: 1px;
+  word-wrap: break-word;
 }
 #widgets-bottom a, #widgets-bottom p, #widgets-bottom h3 {
   color: #ECF0F1;
 }
 #widgets-bottom a {
-  text-decoration: none;
-  font-weight: 400;
-}
-#widgets-bottom h3 {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 18px;
   margin: 0;
   padding: 0;
-  padding-top: 15px;
-  padding-bottom: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 0.5pt;
+  line-height: 1.7em;
+  word-spacing: 1px;
+  word-wrap: break-word;
+}
+#widgets-bottom h1, #widgets-bottom h2, #widgets-bottom h3, #widgets-bottom h4,
+#widgets-bottom h5, #widgets-bottom h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.5pt;
+  line-height: 1.7em;
+  word-spacing: 1px;
+  word-wrap: normal;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0.5em;
+  margin-top: 1.5em;
 }
 #widgets-bottom p {
   margin: 0;
   padding: 0;
   padding-bottom: 1px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 0.5pt;
+  line-height: 1.7em;
+  word-spacing: 1px;
+  word-wrap: break-word;
 }
 #header-desktop {
   padding-top: 0.5em;
@@ -739,7 +764,7 @@ input[type=submit] {
 .search-form input[type=search], .search-form input[type=color],
 .search-form input[type=time], .search-form input[type=week],
 .search-form input[type=month], .search-form input[type=date],
-.search-form input[type=datetime], .search-form textarea, .search-form select {
+.search-form input[type=datetime], .search-form textarea {
   padding: 0 6px;
   background-color: #fff;
 }
@@ -750,8 +775,7 @@ input[type=submit] {
 .search-form input[type=search]:focus, .search-form input[type=color]:focus,
 .search-form input[type=time]:focus, .search-form input[type=week]:focus,
 .search-form input[type=month]:focus, .search-form input[type=date]:focus,
-.search-form input[type=datetime]:focus, .search-form textarea:focus,
-.search-form select:focus {
+.search-form input[type=datetime]:focus, .search-form textarea:focus {
   background-color: #fafafa;
 }
 .search-form button {
@@ -783,7 +807,7 @@ input[type=submit] {
 .bg-highlevel input[type=search], .bg-highlevel input[type=color],
 .bg-highlevel input[type=time], .bg-highlevel input[type=week],
 .bg-highlevel input[type=month], .bg-highlevel input[type=date],
-.bg-highlevel input[type=datetime], .bg-highlevel textarea, .bg-highlevel select {
+.bg-highlevel input[type=datetime], .bg-highlevel textarea {
   background: #fff;
 }
 .bg-highlevel li {
@@ -811,7 +835,7 @@ input[type=submit] {
 .bg-deskdark input[type=search], .bg-deskdark input[type=color],
 .bg-deskdark input[type=time], .bg-deskdark input[type=week],
 .bg-deskdark input[type=month], .bg-deskdark input[type=date],
-.bg-deskdark input[type=datetime], .bg-deskdark textarea, .bg-deskdark select {
+.bg-deskdark input[type=datetime], .bg-deskdark textarea {
   background: #fff;
   color: #222;
 }
@@ -830,7 +854,7 @@ input[type=submit] {
   background: url('static/css/images/skyline-bg.jpg') repeat scroll 0 0 / 100% auto transparent;
 }
 .light-color {
-  color: #eee;
+  color: #bbb;
 }
 .toright {
   width: 100%;
@@ -844,7 +868,7 @@ input[type=submit] {
   font-style: italic;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
-  font-size: 21px;
+  font-size: 18px;
   letter-spacing: -0.1pt;
   line-height: 1.7em;
   word-spacing: 1px;
@@ -893,8 +917,11 @@ li.comment {
   margin-bottom: 3em;
 }
 .comments-area .depth-1 {
-  border: 1px solid #e5e5e5;
+  border: 1px solid #e0e0e0;
   background-color: #FBFBFB;
+  box-shadow: 0px 0px 5px 1px rgba(229, 229, 229, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(229, 229, 229, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(229, 229, 229, 0.75);
 }
 .comments-area .depth-2 {
   border: 1px solid #e0e0e0;
@@ -963,4 +990,81 @@ li.comment {
 }
 .content-none-search {
   margin: 3em 6em 10em 6em;
+}
+.woocommerce select {
+  font-size: 12px;
+}
+.woocommerce span.onsale {
+  top: 1.5em;
+  left: 1.5em;
+}
+.woocommerce .woocommerce-ordering {
+  display: inline;
+  margin: 2px;
+  position: relative;
+}
+.woocommerce .woocommerce-result-count {
+  display: inline;
+  margin: 2px;
+  position: relative;
+  font-size: 12px;
+}
+.woocommerce ul.products {
+  margin-top: 50px;
+}
+.woocommerce ul.products li.product {
+  list-style-type: none;
+  float: left;
+  position: relative;
+  border: 1px solid #e0e0e0;
+  background-color: #FBFBFB;
+  box-shadow: 0px 0px 5px 1px rgba(229, 229, 229, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(229, 229, 229, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(229, 229, 229, 0.75);
+  min-height: 450px;
+}
+.woocommerce ul.products li.product h3 {
+  padding: 0 15px;
+}
+.woocommerce ul.products li.product span.price {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 85%;
+  line-height: 1.5em;
+  letter-spacing: 0.5pt;
+  word-wrap: normal;
+  margin-bottom: 0.5em;
+  color: #C92918;
+  padding: 0 15px;
+  width: 100%;
+  text-align: right;
+  display: block;
+}
+.woocommerce ul.products li.product span.price .amount {
+  margin-left: 0.5em;
+}
+.woocommerce ul.products li.product del {
+  color: #bbb;
+}
+.woocommerce ul.products li.product ins {
+  background: #fff;
+  text-decoration: none;
+}
+.woocommerce ul.products li.product .add_to_cart_button,
+.woocommerce ul.products li.product .ajax_add_to_cart {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.3pt;
+  line-height: 1em;
+  word-spacing: 1px;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.woocommerce .product {
+  margin-bottom: 100px;
+  display: block;
 }

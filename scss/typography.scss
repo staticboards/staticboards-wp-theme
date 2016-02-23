@@ -18,7 +18,7 @@ $font-ui-weight-ultrabold: 800;
 @mixin font-sans-text ()
 {
 	font-family: $font-sans-family;
-	font-size: 21px;
+	font-size: 18px;
 
 	letter-spacing: -0.1pt;
 	line-height: 1.7em;	
@@ -50,7 +50,7 @@ $font-ui-weight-ultrabold: 800;
 {
 	font-family: $font-sans-family;
 	font-weight: $font-sans-weight-ultrabold;
-	font-size: 300%;
+	font-size: 250%;
 
 	line-height: 1.3em;
 	letter-spacing: -1pt;
@@ -63,8 +63,8 @@ $font-ui-weight-ultrabold: 800;
 @mixin font-sans-h2 ()
 {
 	font-family: $font-sans-family;
-	font-weight: $font-sans-weight-bold; 
-	font-size: 200%;
+	font-weight: $font-sans-weight-semibold; 
+	font-size: 150%;
 
 	line-height: 1em;
 	letter-spacing: -1pt;
@@ -77,7 +77,7 @@ $font-ui-weight-ultrabold: 800;
 {
 	font-family: $font-sans-family;
 	font-weight: $font-sans-weight-semibold; 
-	font-size: 150%;
+	font-size: 135%;
 
 	line-height: 1.5em;
 	letter-spacing: -1pt;
@@ -90,7 +90,7 @@ $font-ui-weight-ultrabold: 800;
 {
 	font-family: $font-sans-family;
 	font-weight: $font-sans-weight-light; 
-	font-size: 22px;
+	font-size: 110%;
 
 	word-wrap:normal;
 }
@@ -135,4 +135,44 @@ $font-ui-weight-ultrabold: 800;
 
 	word-wrap:break-word;
 	text-transform:uppercase;
+}
+
+@mixin font-footer-text ()
+{
+	font-family: $font-ui-family;
+	font-weight: $font-ui-weight-light; 
+	font-size: 18px;
+
+	letter-spacing: +0.5pt;
+	line-height: 1.7em;	
+	word-spacing: +1px;
+
+	word-wrap:break-word;
+}
+
+@mixin font-footer-header ()
+{
+	font-family: $font-ui-family;
+	font-weight: $font-ui-weight-bold; 
+	font-size: 18px;
+
+	letter-spacing: +0.5pt;
+	line-height: 1.7em;	
+	word-spacing: +1px;
+
+	word-wrap:normal;
+	text-transform:uppercase;
+}
+
+@mixin font-price ()
+{
+	font-family: $font-sans-family;
+	font-weight: $font-sans-weight-ultrabold; 
+	font-size: 85%;
+
+	line-height: 1.5em;
+	letter-spacing: +0.5pt;
+
+	word-wrap:normal;
+	margin-bottom: 0.5em;	
 }

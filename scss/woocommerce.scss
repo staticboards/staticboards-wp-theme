@@ -1,0 +1,86 @@
+
+.woocommerce
+{
+	select {
+		font-size: 12px;
+	}
+
+	span.onsale
+	{
+    top: +1.5em;
+    left: +1.5em;
+	}
+
+	.woocommerce-ordering
+	{
+		display: inline;
+		margin: 2px;
+		position: relative;
+	}
+
+	.woocommerce-result-count
+	{
+		display: inline;
+		margin: 2px;
+		position: relative;
+		font-size: 12px;
+	}
+
+	ul.products
+	{
+		margin-top: 50px;
+
+		li.product
+		{
+			list-style-type: none;
+			float:left;
+			position: relative;
+			@include panel ();
+
+			min-height: 450px;
+
+			h3
+			{
+				padding: 0 15px;
+			}
+
+			span.price
+			{
+				@include font-price ();
+				color: $color1-primary-3;
+
+				padding: 0 15px;
+				width: 100%;
+				text-align: right;
+				display: block;
+
+				.amount { margin-left: 0.5em; }
+			}
+
+			del {
+			  color: $textlight;
+			}
+			ins {
+			  background: $background0;
+			  text-decoration: none;
+			}
+
+			.add_to_cart_button , .ajax_add_to_cart
+			{
+				@include font-ui-light();
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+			}
+
+		}
+	}
+
+	.product
+	{
+		margin-bottom: 100px;
+		display: block;
+	}
+
+
+}

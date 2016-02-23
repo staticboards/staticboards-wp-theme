@@ -1,12 +1,12 @@
 #widgets-bottom
 {
-
-	font-size: 18px;
-	font-weight: 300;
 	background-image: none;
 	background-color: $color6;
 	color: $color2;
 	padding-bottom: 13em;
+
+
+	@include font-footer-text ();
 
 	a, p, h3
 	{
@@ -14,24 +14,27 @@
 	}
 
 	a {
-		text-decoration: none;
-		font-weight: 400;
-	}
-
-	h3 {
-		text-transform:uppercase;
-		font-weight: 600 ;
-		font-size: 18px;
 		margin: 0;
 		padding: 0;	
-		padding-top: 15px;	
-		padding-bottom: 5px;	
+		@include font-footer-text ();
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+
+		@include font-footer-header ();
+
+		margin: 0;
+		padding: 0;	
+		margin-bottom: 0.5em;
+		margin-top: 1.5em;
 	}
 
 	p {
 		margin: 0;
 		padding: 0;	
 		padding-bottom: 1px;	
+
+		@include font-footer-text ();
 	}
 
 }

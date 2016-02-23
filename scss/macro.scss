@@ -15,8 +15,16 @@
 	input[type=month],
 	input[type=date],
 	input[type=datetime],
-	textarea, select
+	textarea
 		{
         @content;
     }
+}
+
+
+@mixin box-shadow($horizontal:0px , $vertical:0px , $blur:5px, $size: 0px, $color: #777, $opacity: 0.5)
+{
+	box-shadow:         $horizontal $vertical $blur $size rgba($color, $opacity);
+	-moz-box-shadow:    $horizontal $vertical $blur $size rgba($color, $opacity);
+	-webkit-box-shadow: $horizontal $vertical $blur $size rgba($color, $opacity);
 }
