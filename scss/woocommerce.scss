@@ -1,8 +1,23 @@
 
 .woocommerce
 {
+
+	.product-categories
+	{
+		@include font-ui-light();
+		color: $textlight;
+
+		a { color: $textlight; }
+
+		ul.children { margin-left: 2em; }
+	}
+
 	select {
 		font-size: 12px;
+	}
+
+	#respond input#submit, a.button, button.button, input.button {
+		@include font-ui-light();
 	}
 
 	span.onsale
@@ -37,8 +52,6 @@
 			position: relative;
 			@include panel ();
 
-			min-height: 450px;
-
 			h3
 			{
 				padding: 0 15px;
@@ -67,10 +80,7 @@
 
 			.add_to_cart_button , .ajax_add_to_cart
 			{
-				@include font-ui-light();
 				width: 100%;
-				position: absolute;
-				bottom: 0;
 			}
 
 		}

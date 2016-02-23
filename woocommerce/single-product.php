@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php get_template_part( 'template-parts/navbar', get_post_format() ); ?>
 
-<main role="main" id="content" class="woocommerce">
+<main role="main" id="content" class="woocommerce woocommerce-page">
 
 		<div class="fullwidth">
 			<div class="container-fluid postwidth">
@@ -41,7 +41,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	?>
 
 		<div class="row">
-			<div class="col-xs-12">
+			<div class="col-sm-12">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 

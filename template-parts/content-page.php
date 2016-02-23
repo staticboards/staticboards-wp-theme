@@ -4,11 +4,11 @@
 
 	<div class="container-fluid pagewidth">
 
-		<div class="row"><div class="col-xs-12">
+		<div class="row"><div class="col-sm-12">
 		<?php staticboards_post_thumbnail(); ?>
 		</div></div>
 
-		<div class="row"><div class="col-xs-12">
+		<div class="row"><div class="col-sm-12">
 
 			<header class="entry-header">
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -16,7 +16,7 @@
 
 		</div></div>
 
-		<div class="row"><div class="col-xs-12">
+		<div class="row"><div class="col-sm-12">
 
 			<div class="entry-body">
 			<?php

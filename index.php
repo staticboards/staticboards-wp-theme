@@ -9,7 +9,7 @@
 		<div class="fullwidth">
 			<div class="container-fluid postwidth">
 
-				<div class="row"><div class="col-xs-12">
+				<div class="row"><div class="col-sm-12">
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
@@ -17,7 +17,7 @@
 
 
 				<div class="row">
-					<div class="col-xs-8">
+					<div class="col-sm-8">
 
 					<?php while ( have_posts() ) : the_post(); ?>
 						<div class="entrylist-article">
@@ -29,12 +29,20 @@
 
 					</div>
 
-					<div class="col-xs-4">
+					<div class="col-sm-4">
+
+					<?php
+						if ( is_active_sidebar( 'sidebar-blog' ) )
+						{
+							dynamic_sidebar( 'sidebar-blog' );
+						}
+					?>
+
 					</div>
 
 				</div>
 
-				<div class="row"><div class="col-xs-12">
+				<div class="row"><div class="col-sm-12">
 				<?php						
 				the_posts_pagination( array(
 					'prev_text'          => __( 'Previous page', 'twentysixteen' ),

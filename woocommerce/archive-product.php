@@ -23,11 +23,49 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php get_template_part( 'template-parts/navbar', get_post_format() ); ?>
 
-<main role="main" id="content" class="woocommerce">
+<main role="main" id="content" class="woocommerce woocommerce-page">
 
 		<div class="fullwidth">
 			<div class="container-fluid postwidth">
 
+
+
+		<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
+
+				<div class="row"><div class="col-sm-12">
+				<header>
+					<h1 class="page-title screen-reader-text"><?php woocommerce_page_title(); ?></h1>
+				</header>
+				</div></div>
+
+		<?php endif; ?>
+
+		<div class="row">
+
+
+		<!-- BARRA WIDGETS -->
+
+		<div class="col-sm-2">
+	<?php
+		/**
+		 * woocommerce_sidebar hook.
+		 *
+		 * @hooked woocommerce_get_sidebar - 10
+		 */
+		do_action( 'woocommerce_sidebar' );
+
+		if ( is_active_sidebar( 'sidebar-shop' ) )
+		{
+			dynamic_sidebar( 'sidebar-shop' );
+		}
+
+	?>
+		</div>
+
+
+		<!-- BARRA SHOP -->
+
+			<div class="col-sm-10">
 
 	<?php
 		/**
@@ -39,28 +77,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 		do_action( 'woocommerce_before_main_content' );
 	?>
 
-		<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-
-				<div class="row"><div class="col-xs-12">
-				<header>
-					<h1 class="page-title screen-reader-text"><?php woocommerce_page_title(); ?></h1>
-				</header>
-				</div></div>
-
-		<?php endif; ?>
-
-		<div class="row">
-			<div class="col-xs-8">
-
-		<?php
-			/**
-			 * woocommerce_archive_description hook.
-			 *
-			 * @hooked woocommerce_taxonomy_archive_description - 10
-			 * @hooked woocommerce_product_archive_description - 10
-			 */
-			do_action( 'woocommerce_archive_description' );
-		?>
 
 
 		<?php if ( have_posts() ) : ?>
@@ -102,6 +118,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php endif; ?>
 
+
+
+
+		<?php
+			/**
+			 * woocommerce_archive_description hook.
+			 *
+			 * @hooked woocommerce_taxonomy_archive_description - 10
+			 * @hooked woocommerce_product_archive_description - 10
+			 */
+			do_action( 'woocommerce_archive_description' );
+		?>
+
+
 	<?php
 		/**
 		 * woocommerce_after_main_content hook.
@@ -111,19 +141,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 		do_action( 'woocommerce_after_main_content' );
 	?>
 
-		</div>
+			</div>
 
-		<div class="col-xs-4">
-
-	<?php
-		/**
-		 * woocommerce_sidebar hook.
-		 *
-		 * @hooked woocommerce_get_sidebar - 10
-		 */
-		do_action( 'woocommerce_sidebar' );
-	?>
-		</div>
 	</div>
 
 </div>

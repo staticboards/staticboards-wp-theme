@@ -83,12 +83,33 @@ function staticboards_widgets_init() {
     ) );
 
     register_sidebar( array(
+        'name'          => __( 'Blog SideBar', 'staticboards' ),
+        'id'            => 'sidebar-blog',
+        'description'   => __( 'Appears at the side of the post list.', 'staticboards' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<header><h3 class="widget-title">',
+        'after_title'   => '</h3></header>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => __( 'Shop SideBar', 'staticboards' ),
+        'id'            => 'sidebar-shop',
+        'description'   => __( 'Appears at the side of the products.', 'staticboards' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<header><h3 class="widget-title">',
+        'after_title'   => '</h3></header>',
+    ) );
+
+
+    register_sidebar( array(
         'name'          => __( 'Content Bottom CTA 1', 'staticboards' ),
         'id'            => 'sidebar-cta-light',
         'description'   => __( 'Appears at the bottom of the content on posts and pages.', 'staticboards' ),
-        'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="row"><div class="col-xs-12">',
+        'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="row"><div class="col-sm-12">',
         'after_widget'  => '</div></div></section>',
-        'before_title'  => '<header><div class="row"><div class="col-xs-12"><h3 class="widget-title">',
+        'before_title'  => '<header><div class="row"><div class="col-sm-12"><h3 class="widget-title">',
         'after_title'   => '</h3></div></div></header>',
     ) );
 

@@ -14,18 +14,18 @@
 		<div class="container-fluid postwidth">
 
 			<div class="row">
-				<header class="col-xs-12 entry-header">
+				<header class="col-sm-12 entry-header">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</header>
 			</div>
 
 			<div class="row">
 
-				<div class="col-xs-8">
+				<div class="col-sm-8">
 				<?php get_template_part( 'template-parts/content', 'single' ); ?>
 				</div>
 
-				<div class="col-xs-4">
+				<div class="col-sm-4">
 				<?php if ( is_active_sidebar( 'sidebar-post' ) ) : ?>
 				<?php dynamic_sidebar( 'sidebar-post' ); ?>
 				<?php endif; ?>
