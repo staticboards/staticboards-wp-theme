@@ -176,4 +176,3 @@ if ( function_exists( 'staticboards_theme_support' ) ) {
 }
 
 ?>
-

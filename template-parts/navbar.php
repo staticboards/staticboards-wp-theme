@@ -27,31 +27,10 @@
 
   <div role="navigation" id="header-mobile-nav" class="nav-collapse">
 
-    <ul>
-      <li class="active">
-      <a href='#'>Inicio</a>
-      </li>
-
-      <li class="">
-      <a href='#'>Comprar</a>
-      </li>
-
-      <li class="">
-      <a href='#'>Distribuidores</a>
-      </li>
-
-      <li class="">
-      <a href='#'>comprar</a>
-      </li>
-
-      <li class="">
-      <a href='#'>soporte</a>
-      </li>
-
-      <li class="">
-      <a href='#'>Nuestra Historia</a>
-      </li>
-    </ul>
+   <?php wp_nav_menu( array(
+    'theme_location' => 'topnavbar','menu' => 'Top Navbar',
+    'menu_class' => '','menu_id' => '',
+    'container' => 'nav' , 'container_class' => '' , 'container_id' => 'navigation' )) ;?>
 
   </div>
 

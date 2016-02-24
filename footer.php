@@ -11,5 +11,10 @@
 </footer>
 
 <?php wp_footer(); ?>
+
+<script>
+ var navigation = responsiveNav("header-mobile-nav", {customToggle: ".nav-toggle"});
+</script>
+
 </body>
 </html>
