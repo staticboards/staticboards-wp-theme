@@ -491,48 +491,41 @@ input[type=submit] {
   background-color: #262626;
   color: #ECF0F1;
   padding-bottom: 13em;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
   letter-spacing: 0.5pt;
-  line-height: 1.9em;
+  line-height: 1em;
   word-spacing: 1px;
   word-wrap: break-word;
 }
 #widgets-bottom a, #widgets-bottom p, #widgets-bottom h3 {
   color: #ECF0F1;
 }
+#widgets-bottom li {
+  margin-bottom: 10px;
+}
 #widgets-bottom a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: 0.5pt;
-  line-height: 1.9em;
+  line-height: 1em;
   word-spacing: 1px;
   word-wrap: break-word;
 }
 #widgets-bottom h1, #widgets-bottom h2, #widgets-bottom h3, #widgets-bottom h4,
 #widgets-bottom h5, #widgets-bottom h6 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 21px;
   letter-spacing: 0.5pt;
   line-height: 1.7em;
   word-spacing: 1px;
   word-wrap: normal;
   text-transform: uppercase;
-  margin-bottom: 0.5em;
+  margin-bottom: 15px;
   margin-top: 1.5em;
-}
-#widgets-bottom p {
-  padding-bottom: 1px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.5pt;
-  line-height: 1.9em;
-  word-spacing: 1px;
-  word-wrap: break-word;
 }
 #header-desktop {
   padding-top: 0.5em;

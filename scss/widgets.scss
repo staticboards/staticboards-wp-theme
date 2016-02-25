@@ -10,25 +10,24 @@
 
 	a, p, h3
 	{
-		color: $color2;		
+		color: $color2;	
+	}
+
+	li
+	{
+		margin-bottom: 10px;
 	}
 
 	a {
-		@include font-footer-text ();
+		@include font-footer-link ();
 	}
 
 	h1,h2,h3,h4,h5,h6 {
 
 		@include font-footer-header ();
 
-		margin-bottom: 0.5em;
+		margin-bottom: 15px;
 		margin-top: 1.5em;
-	}
-
-	p {
-		padding-bottom: 1px;	
-
-		@include font-footer-text ();
 	}
 
 }
