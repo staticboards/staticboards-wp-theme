@@ -89,7 +89,7 @@ $font-ui-weight-ultrabold: 800;
 @mixin font-sans-h4 ()
 {
 	font-family: $font-sans-family;
-	font-weight: $font-sans-weight-light; 
+	font-weight: $font-sans-weight-normal; 
 	font-size: 110%;
 
 	word-wrap:normal;

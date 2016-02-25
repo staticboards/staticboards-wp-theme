@@ -270,7 +270,7 @@ h3, h3 > a {
 }
 h4, h4 > a {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 110%;
   word-wrap: normal;
 }
@@ -990,6 +990,35 @@ li.comment {
 }
 .content-none-search {
   margin: 3em 6em 10em 6em;
+}
+nav.pagination {
+  width: 100%;
+}
+.pagination {
+  text-align: center;
+}
+.pagination .nav-links {
+  margin: 0 auto;
+}
+.pagination .page-numbers {
+  display: inline-block;
+  padding: 15px 20px;
+  margin: 0 2px 0 0;
+  border: 2px solid #e5e5e5;
+  line-height: 1;
+  text-decoration: none;
+  border-radius: 2px;
+  font-weight: 700;
+}
+.pagination .current, .pagination a.page-numbers:hover {
+  background: #F8F8F8;
+}
+.pagination .screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 .woocommerce .product-categories {
   font-family: 'Open Sans', sans-serif;

@@ -27,6 +27,13 @@
 						</div>
 					<?php endwhile; ?>
 
+					<?php						
+					the_posts_pagination( array(
+						'prev_text'          => __( '<', 'staticboards' ),
+						'next_text'          => __( '>', 'staticboards' )
+					) );
+					?>
+
 					</div>
 
 					<div class="col-sm-4">
@@ -41,18 +48,6 @@
 					</div>
 
 				</div>
-
-				<div class="row"><div class="col-sm-12">
-				<?php						
-				the_posts_pagination( array(
-					'prev_text'          => __( 'Previous page', 'staticboards' ),
-					'next_text'          => __( 'Next page', 'staticboards' ),
-					'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'staticboards' ) . ' </span>',
-				) );
-				?>
-
-				</div></div>
-
 
 			</div>
 		</div>

@@ -185,3 +185,40 @@ li.comment
 {
 	margin: 3em 6em 10em 6em;
 }
+
+nav.pagination { width: 100% ; }
+
+.pagination
+{
+	text-align: center;
+	.nav-links
+	{
+		margin: 0 auto;
+	}
+
+	.page-numbers {
+	    display: inline-block;
+	    padding: 15px 20px;
+	    margin: 0 2px 0 0;
+	    border: 2px solid $background0-primary1;
+	    line-height: 1;
+	    text-decoration: none;
+	    border-radius: 2px;
+
+	    font-weight: $font-sans-weight-ultrabold;
+	}
+
+	.current , a.page-numbers:hover
+	{
+		background: $background0-primary3;
+	}
+
+	.screen-reader-text {
+	    clip: rect(1px, 1px, 1px, 1px);
+	    position: absolute !important;
+	    height: 1px;
+	    width: 1px;
+	    overflow: hidden;
+	}
+
+}
