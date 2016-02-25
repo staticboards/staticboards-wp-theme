@@ -4,9 +4,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Wed Feb 24 2016 17:42:16 GMT+0100 (W. Europe Standard "
 "Time)\n"
-"PO-Revision-Date: Wed Feb 24 2016 17:45:45 GMT+0100 (W. Europe Standard "
-"Time)\n"
-"Last-Translator: staticboards <info@staticboards.com>\n"
+"PO-Revision-Date: Thu Feb 25 2016 12:00:03 GMT+0100 (CET)\n"
+"Last-Translator: wordpress <derethor@gmail.com>\n"
 "Language-Team: \n"
 "Language: Spanish (Spain)\n"
 "Plural-Forms: nplurals=2; plural=n != 1\n"
@@ -24,152 +23,56 @@ msgstr ""
 "X-Loco-Target-Locale: es_ES\n"
 "X-Generator: Loco - https://localise.biz/"
 
-#: /comments.php:33
-msgctxt "comments title"
-msgid "One comment"
-msgstr "Un comentario"
+msgid "% responses"
+msgstr "% respuestas"
 
-#. translators: 1: number of comments, 2: post title
-#: /comments.php:37
-#, php-format
+msgid "1 response"
+msgstr "1 comentario"
+
+msgid "Featured"
+msgstr "Destacado"
+
+msgid "Next page"
+msgstr "Siguiente"
+
+msgid "Nothing Found"
+msgstr "No se ha encontrado nada"
+
+msgid "Page"
+msgstr "Página"
+
+msgid "Pages:"
+msgstr "Páginas:"
+
+msgid "Previous page"
+msgstr "Anterior"
+
+msgid "Read more..."
+msgstr "Leer más..."
+
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr "Lo sentimos, pero no hemos encontrado nada con esas palabras."
+
+msgctxt "Used between list items, there is a space after."
+msgid " / "
+msgstr "/ "
+
 msgctxt "comments title"
 msgid "%1$s comment"
 msgid_plural "%1$s comments"
 msgstr[0] "%1$s commentario"
 msgstr[1] "%1$s commentarios"
 
-#: /comments.php:70
-msgid "Comments are closed."
-msgstr ""
+msgctxt "comments title"
+msgid "One comment"
+msgstr "Un comentario"
 
-#: /index.php:48
-msgid "Previous page"
-msgstr "Anterior"
-
-#: /index.php:49
-msgid "Next page"
-msgstr "Siguiente"
-
-#: /index.php:50 /template-parts/content-single.php:16 /template-parts/content-
-#: page.php:30 /template-parts/content-onlycontent.php:11
-msgid "Page"
-msgstr "Página"
-
-#: /searchform.php:5
-msgctxt "placeholder"
-msgid "Search &hellip;"
-msgstr "Buscar... [placeholder]"
-
-#: /searchform.php:5
 msgctxt "label"
 msgid "Search for:"
 msgstr "Buscar [label]"
 
-#: /template-parts/content-single.php:12 /template-parts/content-page.php:26 
-#: /template-parts/content-onlycontent.php:7
-msgid "Pages:"
-msgstr "Páginas:"
-
-#: /template-parts/content-none.php:9
-msgid "Nothing Found"
-msgstr "No se ha encontrado nada"
-
-#: /template-parts/content-none.php:16
-msgid ""
-"Sorry, but nothing matched your search terms. Please try again with some "
-"different keywords."
-msgstr "Lo sentimos, pero no hemos encontrado nada con esas palabras."
-
-#: /template-parts/content.php:7
-msgid "Featured"
-msgstr "Destacado"
-
-#: /inc/structure.php:8
-msgid "Read more..."
-msgstr "Leer más..."
-
-#: /inc/structure.php:16
-msgid "1 response"
-msgstr "1 comentario"
-
-#: /inc/structure.php:17
-msgid "% responses"
-msgstr "% respuestas"
-
-#: /inc/structure.php:31
-msgctxt "Used between list items, there is a space after."
-msgid " / "
-msgstr "/ "
-
-#: /inc/init.php:76
-msgid "Post SideBar"
-msgstr ""
-
-#: /inc/init.php:78
-msgid "Appears at the side of the content on posts."
-msgstr ""
-
-#: /inc/init.php:86
-msgid "Blog SideBar"
-msgstr ""
-
-#: /inc/init.php:88
-msgid "Appears at the side of the post list."
-msgstr ""
-
-#: /inc/init.php:96
-msgid "Shop SideBar"
-msgstr ""
-
-#: /inc/init.php:98
-msgid "Appears at the side of the products."
-msgstr ""
-
-#: /inc/init.php:107
-msgid "Content Bottom CTA 1"
-msgstr ""
-
-#: /inc/init.php:109 /inc/init.php:119 /inc/init.php:129 /inc/init.php:139 
-#: /inc/init.php:149
-msgid "Appears at the bottom of the content on posts and pages."
-msgstr ""
-
-#: /inc/init.php:117
-msgid "Content Bottom CTA 2"
-msgstr ""
-
-#: /inc/init.php:127
-msgid "Content Bottom 1"
-msgstr ""
-
-#: /inc/init.php:137
-msgid "Content Bottom 2"
-msgstr ""
-
-#: /inc/init.php:147
-msgid "Content Bottom 3"
-msgstr ""
-
-#: /inc/init.php:162
-msgid "Top Navbar"
-msgstr ""
-
-#. Name of the template
-msgid "Front Page Template"
-msgstr ""
-
-#. Name of the theme
-msgid "StaticBoards"
-msgstr ""
-
-#. Theme URI of the theme
-msgid "http://www.staticboards.es"
-msgstr ""
-
-#. Description of the theme
-msgid "Custom Theme for StaticBoards"
-msgstr ""
-
-#. Author URI of the theme
-msgid "http://www.staticboards.es/"
-msgstr ""
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Buscar... [placeholder]"
