@@ -492,10 +492,10 @@ input[type=submit] {
   color: #ECF0F1;
   padding-bottom: 13em;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 16px;
   letter-spacing: 0.5pt;
-  line-height: 1.7em;
+  line-height: 1.9em;
   word-spacing: 1px;
   word-wrap: break-word;
 }
@@ -503,13 +503,11 @@ input[type=submit] {
   color: #ECF0F1;
 }
 #widgets-bottom a {
-  margin: 0;
-  padding: 0;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 16px;
   letter-spacing: 0.5pt;
-  line-height: 1.7em;
+  line-height: 1.9em;
   word-spacing: 1px;
   word-wrap: break-word;
 }
@@ -523,20 +521,16 @@ input[type=submit] {
   word-spacing: 1px;
   word-wrap: normal;
   text-transform: uppercase;
-  margin: 0;
-  padding: 0;
   margin-bottom: 0.5em;
   margin-top: 1.5em;
 }
 #widgets-bottom p {
-  margin: 0;
-  padding: 0;
   padding-bottom: 1px;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 16px;
   letter-spacing: 0.5pt;
-  line-height: 1.7em;
+  line-height: 1.9em;
   word-spacing: 1px;
   word-wrap: break-word;
 }

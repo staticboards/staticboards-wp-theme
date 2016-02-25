@@ -140,11 +140,11 @@ $font-ui-weight-ultrabold: 800;
 @mixin font-footer-text ()
 {
 	font-family: $font-ui-family;
-	font-weight: $font-ui-weight-light; 
-	font-size: 18px;
+	font-weight: $font-ui-weight-normal; 
+	font-size: 16px;
 
 	letter-spacing: +0.5pt;
-	line-height: 1.7em;	
+	line-height: 1.9em;	
 	word-spacing: +1px;
 
 	word-wrap:break-word;
