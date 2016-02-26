@@ -102,6 +102,15 @@ function staticboards_widgets_init() {
         'after_title'   => '</h3></header>',
     ) );
 
+    register_sidebar( array(
+        'name'          => __( 'Product Bottom', 'staticboards' ),
+        'id'            => 'product-bottom',
+        'description'   => __( 'Appears at the bottom of the products.', 'staticboards' ),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<header><h3 class="widget-title">',
+        'after_title'   => '</h3></header>',
+    ) );
 
     register_sidebar( array(
         'name'          => __( 'Content Bottom CTA 1', 'staticboards' ),

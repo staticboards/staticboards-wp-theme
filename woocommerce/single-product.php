@@ -28,8 +28,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div class="fullwidth">
 			<div class="container-fluid postwidth">
 
-
-
 	<?php
 		/**
 		 * woocommerce_before_main_content hook.
@@ -48,6 +46,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<?php wc_get_template_part( 'content', 'single-product' ); ?>
 
 		<?php endwhile; // end of the loop. ?>
+
+	<?php
+		if ( is_active_sidebar( 'product-bottom' ) )
+		{
+			dynamic_sidebar( 'product-bottom' );
+		}
+	?>
 
 	<?php
 		/**
