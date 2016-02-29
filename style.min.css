@@ -257,7 +257,8 @@ h2, h2 > a {
   line-height: 1em;
   letter-spacing: -1pt;
   word-wrap: normal;
-  margin-bottom: 0.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
 }
 h3, h3 > a {
   font-family: 'Open Sans', sans-serif;

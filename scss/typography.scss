@@ -88,7 +88,8 @@ $font-footer-weight-ultrabold: 900;
 	letter-spacing: -1pt;
 
 	word-wrap:normal;
-	margin-bottom: 0.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
 }
 
 @mixin font-sans-h3 ()
