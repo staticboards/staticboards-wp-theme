@@ -1149,30 +1149,6 @@ fieldset {
 #single, #page {
   padding-bottom: 6em;
 }
-.entry-content a {
-  text-decoration: none;
-  outline: none;
-}
-.entry-content a:link {
-  text-decoration: none;
-  color: #222;
-  box-shadow: 0 1px 0 0 #222;
-}
-.entry-content a:visited {
-  text-decoration: none;
-  color: #222;
-  box-shadow: 0 1px 0 0 #222;
-}
-.entry-content a:hover {
-  text-decoration: none;
-  color: #222;
-  box-shadow: 0 1px 0 0 #2980B9;
-}
-.entry-content a:active {
-  text-decoration: none;
-  color: #222;
-  box-shadow: 0 1px 0 0 #222;
-}
 .post-thumbnail {
   margin-bottom: 2em;
 }
@@ -1412,6 +1388,30 @@ nav.pagination {
 }
 .woocommerce a:active {
   box-shadow: none;
+}
+.woocommerce .entry-content a {
+  text-decoration: none;
+  outline: none;
+}
+.woocommerce .entry-content a:link {
+  text-decoration: none;
+  color: #222;
+  box-shadow: 0 1px 0 0 #222;
+}
+.woocommerce .entry-content a:visited {
+  text-decoration: none;
+  color: #222;
+  box-shadow: 0 1px 0 0 #222;
+}
+.woocommerce .entry-content a:hover {
+  text-decoration: none;
+  color: #222;
+  box-shadow: 0 1px 0 0 #2980B9;
+}
+.woocommerce .entry-content a:active {
+  text-decoration: none;
+  color: #222;
+  box-shadow: 0 1px 0 0 #222;
 }
 .woocommerce .product-categories {
   font-family: 'Open Sans', sans-serif;

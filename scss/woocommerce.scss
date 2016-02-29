@@ -3,6 +3,12 @@
 {
 	a{ @include a-noborder(); }
 
+
+	.entry-content
+	{
+		a { @include a-border(); }	
+	}
+
 	.product-categories
 	{
 		@include font-ui-light();
