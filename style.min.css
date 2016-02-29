@@ -361,47 +361,6 @@ input[type=submit] {
   width: auto;
   -webkit-appearance: none;
 }
-.button:link {
-  color: #fff;
-  text-decoration: none;
-}
-.button:hover, input[type=submit]:hover {
-  background: #ccc;
-  text-decoration: none;
-}
-.button, .button:visited, input[type=submit] {
-  color: #ECF0F1;
-  background: #2980B9;
-  border: 1px solid #3498DB;
-  border-radius: 6px;
-  margin: 5px 0;
-  padding: 12px 15px;
-  text-align: center;
-  display: inline-block;
-  width: auto;
-  cursor: pointer;
-}
-.button:hover, input[type=submit]:hover {
-  color: #ECF0F1;
-  background: #3498DB;
-}
-.buttonlink {
-  text-align: center;
-  background-color: #656D71;
-  border: 1px #888 solid;
-  border-radius: 1px;
-  box-shadow: 0 1px 3px rgba(0, 9, 0, 0.3);
-  padding: 1em 20px;
-  margin: 3em 0em;
-}
-.buttonlink a {
-  text-decoration: none;
-  font-weight: 400;
-  color: #eee;
-}
-.buttonlink a:hover {
-  text-decoration: underline;
-}
 .hr {
   clear: both;
   display: block;
@@ -679,6 +638,59 @@ fieldset {
   font-style: italic;
   line-height: 1.61538;
   padding-top: 7px;
+}
+.button:link {
+  color: #fff;
+  text-decoration: none;
+}
+.button:hover, input[type=submit]:hover {
+  background: #ccc;
+  text-decoration: none;
+}
+.button, .button:visited, input[type=submit] {
+  color: #ECF0F1;
+  background: #2980B9;
+  border: 1px solid #3498DB;
+  border-radius: 6px;
+  margin: 5px 0;
+  padding: 12px 15px;
+  text-align: center;
+  display: inline-block;
+  width: auto;
+  cursor: pointer;
+}
+.button:hover, input[type=submit]:hover {
+  color: #ECF0F1;
+  background: #3498DB;
+}
+.buttonlink {
+  text-align: center;
+  background-color: #656D71;
+  border: 1px #888 solid;
+  border-radius: 1px;
+  box-shadow: 0 1px 3px rgba(0, 9, 0, 0.3);
+  padding: 1em 20px;
+  margin: 3em 0em;
+}
+.buttonlink a {
+  text-decoration: none;
+  font-weight: 400;
+  color: #e5e5e5;
+}
+.buttonlink a:hover {
+  text-decoration: underline;
+}
+.buttonlink a:link {
+  box-shadow: none;
+}
+.buttonlink a:visited {
+  box-shadow: none;
+}
+.buttonlink a:hover {
+  box-shadow: none;
+}
+.buttonlink a:active {
+  box-shadow: none;
 }
 #widgets-bottom {
   background-image: none;
