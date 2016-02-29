@@ -1278,6 +1278,18 @@ nav.pagination {
   width: 1px;
   overflow: hidden;
 }
+.woocommerce a:link {
+  box-shadow: none;
+}
+.woocommerce a:visited {
+  box-shadow: none;
+}
+.woocommerce a:hover {
+  box-shadow: none;
+}
+.woocommerce a:active {
+  box-shadow: none;
+}
 .woocommerce .product-categories {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
