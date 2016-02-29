@@ -412,30 +412,8 @@ figure {
 
 a {
 	@include font-sans-text ();
+	@include a-border();
 
-	text-decoration: none;
-	outline: none;
-
-	&:link { 
-		text-decoration: none;
-		color: $textblack;
-		box-shadow: 0 1px 0 0 $textblack;
-		}
-	&:visited {
-		text-decoration: none;
-		color: $textblack;
-		box-shadow: 0 1px 0 0 $textblack;
-		}
-	&:hover {
-		text-decoration: none;
-		color: $textblack;
-		box-shadow: 0 1px 0 0 $color4;
-		}
-	&:active {
-		text-decoration: none;
-		color: $textblack;
-		box-shadow: 0 1px 0 0 $textblack;
-		}
 	img {
 		display: block;
 		border: none;

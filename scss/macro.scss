@@ -48,10 +48,11 @@
 		}
 }
 
-@mixin a-border($text-decoration-hover:none)
+@mixin a-border($hovercolor:$color4)
 {
 	text-decoration: none;
 	outline: none;
+
 
 	&:link { 
 		text-decoration: none;
@@ -64,13 +65,14 @@
 		box-shadow: 0 1px 0 0 $textblack;
 		}
 	&:hover {
-		text-decoration: $text-decoration-hover;
+		text-decoration: none;
 		color: $textblack;
-		box-shadow: 0 1px 0 0 $color4;
+		box-shadow: 0 1px 0 0 $hovercolor;
 		}
 	&:active {
 		text-decoration: none;
 		color: $textblack;
 		box-shadow: 0 1px 0 0 $textblack;
 		}
+
 }

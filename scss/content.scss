@@ -19,6 +19,11 @@
 {
 }
 
+.entry-content
+{
+	a { @include a-border(); }	
+}
+
 .post-thumbnail
 {
 	margin-bottom: 2em;
