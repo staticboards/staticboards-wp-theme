@@ -418,23 +418,23 @@ a {
 
 	&:link { 
 		text-decoration: none;
-		color: $color4;
-		box-shadow: 0 1px 0 0 $color4;
+		color: $textblack;
+		box-shadow: 0 1px 0 0 $textblack;
 		}
 	&:visited {
 		text-decoration: none;
-		color: $color4;
-		box-shadow: 0 1px 0 0 $color4;
+		color: $textblack;
+		box-shadow: 0 1px 0 0 $textblack;
 		}
 	&:hover {
 		text-decoration: none;
-		color: $color3;
+		color: $textblack;
 		box-shadow: 0 1px 0 0 $color4;
 		}
 	&:active {
 		text-decoration: none;
-		color: $color3;
-		box-shadow: 0 1px 0 0 $color4;
+		color: $textblack;
+		box-shadow: 0 1px 0 0 $textblack;
 		}
 	img {
 		display: block;

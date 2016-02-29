@@ -584,23 +584,23 @@ a {
 }
 a:link {
   text-decoration: none;
-  color: #2980B9;
-  box-shadow: 0 1px 0 0 #2980B9;
+  color: #222;
+  box-shadow: 0 1px 0 0 #222;
 }
 a:visited {
   text-decoration: none;
-  color: #2980B9;
-  box-shadow: 0 1px 0 0 #2980B9;
+  color: #222;
+  box-shadow: 0 1px 0 0 #222;
 }
 a:hover {
   text-decoration: none;
-  color: #3498DB;
+  color: #222;
   box-shadow: 0 1px 0 0 #2980B9;
 }
 a:active {
   text-decoration: none;
-  color: #3498DB;
-  box-shadow: 0 1px 0 0 #2980B9;
+  color: #222;
+  box-shadow: 0 1px 0 0 #222;
 }
 a img {
   display: block;
