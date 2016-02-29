@@ -9,6 +9,14 @@ $font-sans-weight-semibold: 600;
 $font-sans-weight-bold: 700;
 $font-sans-weight-ultrabold: 700;
 
+$font-monospace-family: 'monospace';
+$font-monospace-weight-thin: 300;
+$font-monospace-weight-light: 300;
+$font-monospace-weight-normal: 400;
+$font-monospace-weight-semibold: 600;
+$font-monospace-weight-bold: 700;
+$font-monospace-weight-ultrabold: 700;
+
 $font-ui-family: 'Open Sans',sans-serif;
 $font-ui-weight-thin: 300;
 $font-ui-weight-light: 300;
@@ -116,6 +124,21 @@ $font-footer-weight-ultrabold: 900;
 @mixin font-sans-paragraph ()
 {
 	margin: 0 0 1em;	
+}
+
+@mixin font-monospace-text ()
+{
+	font-family: $font-monospace-family;
+}
+
+@mixin font-monospace-pre ()
+{
+	font-family: $font-monospace-family;
+	font-size: 16px;
+	line-height: 1.3125;
+	white-space: pre;
+	white-space: pre-wrap;
+	word-wrap: break-word;
 }
 
 @mixin font-ui-text ()

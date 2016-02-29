@@ -28,3 +28,22 @@
 	-moz-box-shadow:    $horizontal $vertical $blur $size rgba($color, $opacity);
 	-webkit-box-shadow: $horizontal $vertical $blur $size rgba($color, $opacity);
 }
+
+@mixin a-noborder()
+{
+
+	a {
+		&:link { 
+			box-shadow: none;
+			}
+		&:visited {
+			box-shadow: none;
+			}
+		&:hover {
+			box-shadow: none;
+			}
+		&:active {
+			box-shadow: none;
+			}
+	}
+}

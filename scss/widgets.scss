@@ -20,6 +20,19 @@
 
 	a {
 		@include font-footer-link ();
+
+		&:link { 
+			box-shadow: none;
+			}
+		&:visited {
+			box-shadow: none;
+			}
+		&:hover {
+			box-shadow: none;
+			}
+		&:active {
+			box-shadow: none;
+			}
 	}
 
 	h1,h2,h3,h4,h5,h6 {
