@@ -1,6 +1,7 @@
 
 .woocommerce
 {
+	@include a-noborder();
 
 	.product-categories
 	{
