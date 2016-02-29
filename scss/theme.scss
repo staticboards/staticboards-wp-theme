@@ -411,7 +411,7 @@ figure {
 }
 
 a {
-	@include font-sans-bold ();
+	@include font-sans-text ();
 
 	text-decoration: none;
 	outline: none;
