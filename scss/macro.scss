@@ -29,21 +29,48 @@
 	-webkit-box-shadow: $horizontal $vertical $blur $size rgba($color, $opacity);
 }
 
-@mixin a-noborder()
+@mixin a-noborder
 {
+	text-decoration: none;
+	outline: none;
 
-	a {
-		&:link { 
-			box-shadow: none;
-			}
-		&:visited {
-			box-shadow: none;
-			}
-		&:hover {
-			box-shadow: none;
-			}
-		&:active {
-			box-shadow: none;
-			}
-	}
+	&:link { 
+		box-shadow: none;
+		}
+	&:visited {
+		box-shadow: none;
+		}
+	&:hover {
+		box-shadow: none;
+		}
+	&:active {
+		box-shadow: none;
+		}
+}
+
+@mixin a-border($text-decoration-hover:none)
+{
+	text-decoration: none;
+	outline: none;
+
+	&:link { 
+		text-decoration: none;
+		color: $textblack;
+		box-shadow: 0 1px 0 0 $textblack;
+		}
+	&:visited {
+		text-decoration: none;
+		color: $textblack;
+		box-shadow: 0 1px 0 0 $textblack;
+		}
+	&:hover {
+		text-decoration: $text-decoration-hover;
+		color: $textblack;
+		box-shadow: 0 1px 0 0 $color4;
+		}
+	&:active {
+		text-decoration: none;
+		color: $textblack;
+		box-shadow: 0 1px 0 0 $textblack;
+		}
 }

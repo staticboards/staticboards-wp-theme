@@ -1,0 +1,69 @@
+#sellers {
+	width: auto;
+	margin-bottom: 2em; 
+
+
+	ul { margin: 0; padding: 0; }
+
+	li {
+		width: 280px;
+		list-style: outside none none;
+		display: inline-block;
+
+		@include panel();
+
+		margin-right: 15px;
+		margin-bottom: 35px;
+		padding: 15px;
+	}
+
+	a	{ @include a-noborder(); }
+
+	img { display:inline; }
+
+	.sellermain {
+
+		.sellerimg {
+
+		    display: table-cell;
+		    vertical-align: middle;
+		  	width: 282px;
+		  	height: 130px;
+
+				div {
+					margin-left: auto; 	margin-right: auto;
+					display: block;
+					text-align: center;
+				}
+		}
+
+		.sellerdesc {
+			text-align: center;
+			font-weight: 600;
+		 	height: 130px;
+		}
+
+		.sellerbtn {
+			padding: 1em;
+			display: block;
+			width: 100%;
+			text-align: center;
+			line-height: 0.6px;
+
+
+		  color: #333;
+		  background-color: #EEE;
+
+		  text-decoration: none;
+		  text-align: center;
+		  text-transform: uppercase;
+
+			a {
+				@include font-ui-header ();
+			}
+		}
+
+	}
+}
+
+

@@ -144,9 +144,8 @@ li.comment
 	{
 		color: $textgray;
 		@include font-ui-light();
+		@include a-noborder();
 	}
-
-	@include a-noborder();
 
 	.cat-links
 	{

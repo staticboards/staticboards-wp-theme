@@ -1,6 +1,6 @@
 #header
 {
-	@include a-noborder();
+	a { @include a-noborder(); }	
 }
 
 #header-desktop {

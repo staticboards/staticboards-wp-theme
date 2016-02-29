@@ -157,6 +157,20 @@ $font-footer-weight-ultrabold: 900;
 }
 
 
+@mixin font-ui-header ()
+{
+	font-family: $font-ui-family;
+	font-weight: $font-ui-weight-semibold; 
+	font-size: 18px;
+
+	letter-spacing: +0.5pt;
+	line-height: 1.7em;	
+	word-spacing: +1px;
+
+	word-wrap:break-word;
+	text-transform:uppercase;
+}
+
 @mixin font-ui-light ()
 {
 	font-family: $font-ui-family;

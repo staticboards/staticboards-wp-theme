@@ -35,7 +35,10 @@
 	}
 
 	@include bottom-gravity-form ();
-	@include a-noborder();
+
+	a{
+		@include a-noborder();		
+	}
 
 }
 
@@ -56,7 +59,9 @@
 	}
 
 	@include bottom-gravity-form ();
-	@include a-noborder();
+	a{
+		@include a-noborder();		
+	}
 
 }
 
@@ -88,10 +93,9 @@
 	text-align: center;
 
 	@include font-sans-light ();
-	@include a-noborder();
 
 	a {
-		text-decoration: none;
+		@include a-noborder();
 		color: $color2;
 	}
 }

@@ -536,16 +536,12 @@ fieldset {
 	margin: 3em 0em;
 
 	a {
-		text-decoration: none;
 		font-weight: $font-sans-weight-normal;
 		color: $background0-primary1;
-
-		&:hover {
-			text-decoration: underline;
-		}
+		@include a-noborder();
+		&:hover { text-decoration: none ; }
 	}
 
-	@include a-noborder();
 }
 
 

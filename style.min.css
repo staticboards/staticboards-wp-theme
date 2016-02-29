@@ -673,12 +673,10 @@ fieldset {
   margin: 3em 0em;
 }
 .buttonlink a {
-  text-decoration: none;
   font-weight: 400;
   color: #e5e5e5;
-}
-.buttonlink a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  outline: none;
 }
 .buttonlink a:link {
   box-shadow: none;
@@ -691,6 +689,9 @@ fieldset {
 }
 .buttonlink a:active {
   box-shadow: none;
+}
+.buttonlink a:hover {
+  text-decoration: none;
 }
 #widgets-bottom {
   background-image: none;
@@ -744,6 +745,10 @@ fieldset {
   text-transform: uppercase;
   margin-bottom: 15px;
   margin-top: 1.5em;
+}
+#header a {
+  text-decoration: none;
+  outline: none;
 }
 #header a:link {
   box-shadow: none;
@@ -1038,6 +1043,10 @@ fieldset {
   color: #E74C3C;
   margin-left: 4px;
 }
+.bg-highlevel a {
+  text-decoration: none;
+  outline: none;
+}
 .bg-highlevel a:link {
   box-shadow: none;
 }
@@ -1079,6 +1088,10 @@ fieldset {
   color: #E74C3C;
   margin-left: 4px;
 }
+.bg-deskdark a {
+  text-decoration: none;
+  outline: none;
+}
 .bg-deskdark a:link {
   box-shadow: none;
 }
@@ -1116,6 +1129,11 @@ fieldset {
   word-wrap: break-word;
   font-weight: 300;
 }
+#footer a {
+  text-decoration: none;
+  outline: none;
+  color: #ECF0F1;
+}
 #footer a:link {
   box-shadow: none;
 }
@@ -1127,10 +1145,6 @@ fieldset {
 }
 #footer a:active {
   box-shadow: none;
-}
-#footer a {
-  text-decoration: none;
-  color: #ECF0F1;
 }
 #single, #page {
   padding-bottom: 6em;
@@ -1225,6 +1239,8 @@ li.comment {
   word-spacing: 1px;
   word-wrap: break-word;
   text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
 }
 .entrylist-footer a:link {
   box-shadow: none;
@@ -1277,6 +1293,89 @@ nav.pagination {
   height: 1px;
   width: 1px;
   overflow: hidden;
+}
+#sellers {
+  width: auto;
+  margin-bottom: 2em;
+}
+#sellers ul {
+  margin: 0;
+  padding: 0;
+}
+#sellers li {
+  width: 280px;
+  list-style: outside none none;
+  display: inline-block;
+  border: 1px solid #e0e0e0;
+  background-color: #FBFBFB;
+  box-shadow: 0px 0px 5px 1px rgba(229, 229, 229, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(229, 229, 229, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(229, 229, 229, 0.75);
+  margin-right: 15px;
+  margin-bottom: 35px;
+  padding: 15px;
+}
+#sellers a {
+  text-decoration: none;
+  outline: none;
+}
+#sellers a:link {
+  box-shadow: none;
+}
+#sellers a:visited {
+  box-shadow: none;
+}
+#sellers a:hover {
+  box-shadow: none;
+}
+#sellers a:active {
+  box-shadow: none;
+}
+#sellers img {
+  display: inline;
+}
+#sellers .sellermain .sellerimg {
+  display: table-cell;
+  vertical-align: middle;
+  width: 282px;
+  height: 130px;
+}
+#sellers .sellermain .sellerimg div {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+}
+#sellers .sellermain .sellerdesc {
+  text-align: center;
+  font-weight: 600;
+  height: 130px;
+}
+#sellers .sellermain .sellerbtn {
+  padding: 1em;
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 0.6px;
+  color: #333;
+  background-color: #EEE;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+#sellers .sellermain .sellerbtn a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5pt;
+  line-height: 1.7em;
+  word-spacing: 1px;
+  word-wrap: break-word;
+  text-transform: uppercase;
+}
+.woocommerce a {
+  text-decoration: none;
+  outline: none;
 }
 .woocommerce a:link {
   box-shadow: none;
