@@ -245,6 +245,7 @@ h1, h1 > a {
   line-height: 1.3em;
   letter-spacing: -1pt;
   word-wrap: normal;
+  margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
 h2, h2 > a {
@@ -254,7 +255,7 @@ h2, h2 > a {
   line-height: 1em;
   letter-spacing: -1pt;
   word-wrap: normal;
-  margin-top: 1.5em;
+  margin-top: 1em;
   margin-bottom: 1em;
 }
 h3, h3 > a {
