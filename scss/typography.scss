@@ -17,13 +17,13 @@ $font-monospace-weight-semibold: 600;
 $font-monospace-weight-bold: 700;
 $font-monospace-weight-ultrabold: 700;
 
-$font-ui-family: 'Open Sans',sans-serif;
-$font-ui-weight-thin: 300;
+$font-ui-family: 'Lato',sans-serif;
+$font-ui-weight-thin: 100;
 $font-ui-weight-light: 300;
 $font-ui-weight-normal: 400;
-$font-ui-weight-semibold: 600;
+$font-ui-weight-semibold: 700;
 $font-ui-weight-bold: 700;
-$font-ui-weight-ultrabold: 800;
+$font-ui-weight-ultrabold: 900;
 
 $font-footer-family:  'Lato',sans-serif;
 $font-footer-weight-thin: 100;
@@ -128,6 +128,26 @@ $font-footer-weight-ultrabold: 900;
 	margin: 0 0 1em;	
 }
 
+
+@mixin font-sans-blockquote()
+{
+	font-family: $font-sans-family;
+	font-weight: $font-sans-weight-light; 
+	font-size: 19px;
+	font-style: italic;
+	line-height: 1.4736842105;
+}
+
+@mixin font-sans-address()
+{
+	font-family: $font-sans-family;
+	font-weight: $font-sans-weight-light; 
+	font-size: 19px;
+	font-style: italic;
+	line-height: 1.4736842105;
+}
+
+
 @mixin font-monospace-text ()
 {
 	font-family: $font-monospace-family;
@@ -227,18 +247,52 @@ $font-footer-weight-ultrabold: 900;
 	text-transform:uppercase;
 }
 
-@mixin font-product-excerpt ()
+@mixin font-product-widget-text ()
 {
-
 	font-family: $font-ui-family;
-	font-weight: $font-sans-weight-light; 
-	font-size: 75%;
+	font-weight: $font-ui-weight-light; 
+	font-size: 11px;
 
-	line-height: 1.5em;
+	line-height: 1.1em;
+	letter-spacing: +0.5pt;
+
+ 	line-height: 1em;	letter-spacing: 0;
+
+	word-wrap:normal;
+}
+
+@mixin font-product-widget-strong ()
+{
+	@include font-product-widget-text ();
+	font-weight: $font-ui-weight-semibold;
+}
+
+@mixin font-product-widget-header ()
+{
+	font-family: $font-ui-family;
+	font-weight: $font-ui-weight-bold; 
+	font-size: 16px;
+
+	line-height: 1.1em;
+	letter-spacing: +0.5pt;
+
+ 	line-height: 1em;	letter-spacing: 0;
+
+	word-wrap:normal;
+	margin-bottom: 1em;	
+}
+
+@mixin font-product-widget-link ()
+{
+	font-family: $font-ui-family;
+	font-weight: $font-ui-weight-semibold; 
+	font-size: 11px;
+
+	line-height: 1.1em;
 	letter-spacing: +0.5pt;
 
 	word-wrap:normal;
-	margin-bottom: 0.5em;	
+	margin-bottom: 0.5em;
 }
 
 

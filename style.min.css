@@ -153,7 +153,6 @@ output, ruby, section, summary, time, mark, audio, video {
   padding: 0;
   border: 0;
   vertical-align: baseline;
-  font-size: 100%;
 }
 table {
   border-spacing: 0;
@@ -161,14 +160,12 @@ table {
 }
 caption, th, td {
   text-align: left;
-  font-weight: normal;
 }
 h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 html {
   overflow-y: scroll;
-  font-size: 100%;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -198,7 +195,6 @@ hr {
 sub, sup {
   position: relative;
   vertical-align: baseline;
-  font-size: 75%;
   line-height: 0;
 }
 sup {
@@ -387,11 +383,13 @@ input[type=submit] {
   border-color: #ddd;
 }
 blockquote {
-  border-left: 4px solid #1a1a1a;
-  color: #686868;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   font-size: 19px;
   font-style: italic;
   line-height: 1.47368;
+  border-left: 4px solid #1a1a1a;
+  color: #686868;
   margin-bottom: 28px;
   padding: 0 0 0 24px;
 }
@@ -413,14 +411,6 @@ blockquote > :last-child {
 }
 blockquote cite, blockquote small {
   color: #1a1a1a;
-  font-size: 16px;
-  line-height: 1.75;
-}
-blockquote em, blockquote i, blockquote cite {
-  font-style: normal;
-}
-blockquote strong, blockquote b {
-  font-weight: 400;
 }
 blockquote.alignleft, blockquote.alignright {
   border: 0 solid #1a1a1a;
@@ -429,7 +419,11 @@ blockquote.alignleft, blockquote.alignright {
   width: calc(50% - 14px);
 }
 address {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 19px;
   font-style: italic;
+  line-height: 1.47368;
   margin: 0 0 28px;
 }
 code, kbd, tt, var, samp, pre {
@@ -471,7 +465,6 @@ del {
   opacity: 0.8;
 }
 sup, sub {
-  font-size: 75%;
   height: 0;
   line-height: 0;
   position: relative;
@@ -482,12 +475,6 @@ sub {
 }
 sup {
   bottom: -3px;
-}
-small {
-  font-size: 80%;
-}
-big {
-  font-size: 125%;
 }
 hr {
   background-color: #e0e0e0;
@@ -538,15 +525,12 @@ table, .mce-item-table {
 }
 table th, .mce-item-table th, table caption {
   border-width: 0 1px 1px 0;
-  font-size: 16px;
-  font-weight: 700;
   padding: 7px;
   text-align: left;
   vertical-align: baseline;
 }
 table td, .mce-item-table td {
   border-width: 0 1px 1px 0;
-  font-size: 16px;
   padding: 7px;
   vertical-align: baseline;
 }
@@ -637,9 +621,6 @@ fieldset {
 }
 .wp-caption-text, .wp-caption-dd {
   color: #686868;
-  font-size: 13px;
-  font-style: italic;
-  line-height: 1.61538;
   padding-top: 7px;
 }
 .button:link {
@@ -700,6 +681,15 @@ fieldset {
   text-decoration: none;
 }
 .cta-button a {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.3pt;
+  line-height: 1em;
+  word-spacing: 1px;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  white-space: nowrap;
   padding: 1em 2em;
   background: #41a9d5;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #298fba),
@@ -808,8 +798,8 @@ fieldset {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   background: #fff;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.5pt;
   line-height: 1.7em;
@@ -843,8 +833,8 @@ fieldset {
   text-decoration: none;
   display: inline;
   border-top: 2px solid #bbb;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.5pt;
   line-height: 1.7em;
@@ -1262,8 +1252,8 @@ li.comment {
   padding: 15px 30px;
 }
 .entrylist-footer {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   font-size: 12px;
   letter-spacing: 0.3pt;
   line-height: 1em;
@@ -1274,8 +1264,8 @@ li.comment {
 }
 .entrylist-footer a {
   color: #666;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   font-size: 12px;
   letter-spacing: 0.3pt;
   line-height: 1em;
@@ -1407,14 +1397,17 @@ nav.pagination {
   text-transform: uppercase;
 }
 #sellers .sellermain .sellerbtn a {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.5pt;
   line-height: 1.7em;
   word-spacing: 1px;
   word-wrap: break-word;
   text-transform: uppercase;
+}
+.woocommerce .page-title {
+  display: none;
 }
 .woocommerce a {
   text-decoration: none;
@@ -1456,30 +1449,13 @@ nav.pagination {
   color: #222;
   box-shadow: 0 1px 0 0 #222;
 }
-.woocommerce .product-categories {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  letter-spacing: 0.3pt;
-  line-height: 1em;
-  word-spacing: 1px;
-  word-wrap: break-word;
-  text-transform: uppercase;
-  color: #bbb;
-}
-.woocommerce .product-categories a {
-  color: #bbb;
-}
-.woocommerce .product-categories ul.children {
-  margin-left: 2em;
-}
 .woocommerce select {
   font-size: 12px;
 }
 .woocommerce #respond input#submit, .woocommerce a.button,
 .woocommerce button.button, .woocommerce input.button {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   font-size: 12px;
   letter-spacing: 0.3pt;
   line-height: 1em;
@@ -1516,21 +1492,11 @@ nav.pagination {
   -webkit-box-shadow: 0px 0px 5px 1px rgba(229, 229, 229, 0.75);
   min-height: 400px;
 }
-.woocommerce ul.products li.product p {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 75%;
-  line-height: 1.5em;
-  letter-spacing: 0.5pt;
-  word-wrap: normal;
-  margin-bottom: 0.5em;
-  margin: 20px 15px;
-}
 .woocommerce ul.products li.product h3 {
   padding: 0 15px;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.5pt;
   line-height: 1.7em;
@@ -1563,14 +1529,15 @@ nav.pagination {
 }
 .woocommerce ul.products li.product .add_to_cart_button,
 .woocommerce ul.products li.product .ajax_add_to_cart {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   font-size: 12px;
   letter-spacing: 0.3pt;
   line-height: 1em;
   word-spacing: 1px;
   word-wrap: break-word;
   text-transform: uppercase;
+  white-space: nowrap;
   padding: 1em 2em;
   background: #41a9d5;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #298fba),
@@ -1621,8 +1588,8 @@ nav.pagination {
   color: #ffffff;
 }
 .woocommerce ul.products li.product .added_to_cart {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.5pt;
   line-height: 1.7em;
@@ -1637,6 +1604,100 @@ nav.pagination {
   color: #bbb !important;
   margin: 5px auto;
 }
+.woocommerce .widget {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 1.1em;
+  letter-spacing: 0.5pt;
+  line-height: 1em;
+  letter-spacing: 0;
+  word-wrap: normal;
+  margin-bottom: 30px;
+}
+.woocommerce .widget strong {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 1.1em;
+  letter-spacing: 0.5pt;
+  line-height: 1em;
+  letter-spacing: 0;
+  word-wrap: normal;
+  font-weight: 700;
+}
+.woocommerce .widget h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.1em;
+  letter-spacing: 0.5pt;
+  line-height: 1em;
+  letter-spacing: 0;
+  word-wrap: normal;
+  margin-bottom: 1em;
+}
+.woocommerce .widget ul, .woocommerce .widget li {
+  list-style: none;
+  padding-left: 0;
+}
+.woocommerce .widget a {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1.1em;
+  letter-spacing: 0.5pt;
+  word-wrap: normal;
+  margin-bottom: 0.5em;
+}
+.woocommerce .widget ul.children {
+  margin: 0 15px;
+}
+.woocommerce .widget .widget_shopping_cart_content .cart_list .remove {
+  line-height: 1em;
+  letter-spacing: 0;
+}
+.woocommerce .widget .widget_shopping_cart_content .cart_list li {
+  padding-left: 15px;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+.woocommerce .widget .widget_shopping_cart_content strong,
+.woocommerce .widget .widget_shopping_cart_content .total {
+  font-size: 120%;
+}
+.woocommerce .widget .widget_shopping_cart_content .buttons {
+  text-align: center;
+}
+.woocommerce .widget .widget_shopping_cart_content .button {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.3pt;
+  line-height: 1em;
+  word-spacing: 1px;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-image: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  text-shadow: none;
+  color: #222;
+  background-color: #e5e5e5;
+  margin: 5px 0;
+  line-height: 1;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  overflow: visible;
+  padding: 0.618em 1em;
+  border-radius: 3px;
+  left: auto;
+  border: 0;
+  display: inline-block;
+  width: 80%;
+}
 .woocommerce .product {
   margin-bottom: 100px;
   display: block;
@@ -1645,6 +1706,15 @@ nav.pagination {
   text-align: center;
 }
 .woocommerce button.button.alt, .woocommerce input.button.alt {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.3pt;
+  line-height: 1em;
+  word-spacing: 1px;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  white-space: nowrap;
   padding: 1em 2em;
   background: #41a9d5;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #298fba),

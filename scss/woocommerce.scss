@@ -2,22 +2,17 @@
 .woocommerce
 {
 
+	.page-title
+	{
+		display:none;
+	}
+
 	a{ @include a-noborder(); }
 
 
 	.entry-content
 	{
 		a { @include a-border(); }	
-	}
-
-	.product-categories
-	{
-		@include font-ui-light();
-		color: $textlight;
-
-		a { color: $textlight; }
-
-		ul.children { margin-left: 2em; }
 	}
 
 	select {
@@ -61,12 +56,6 @@
 			@include panel ();
 			min-height: 400px;
 
-			p
-			{
-				@include font-product-excerpt();
-				margin: 20px 15px;
-			}
-
 			h3
 			{
 				padding: 0 15px;
@@ -100,7 +89,6 @@
 
 			.add_to_cart_button , .ajax_add_to_cart
 			{
-				@include font-ui-light();
 				@include cta-button();
 				text-align: center;
 				display: block;
@@ -123,6 +111,58 @@
 				margin: 5px auto;
 			}
 
+		}
+	}
+
+
+	.widget
+	{
+		@include font-product-widget-text();
+		margin-bottom: 30px;
+
+		strong { @include font-product-widget-strong () };
+		h3 { @include font-product-widget-header(); }
+		
+		ul,li
+		{
+			list-style: none;
+			padding-left: 0;
+		}
+
+		a {
+			@include font-product-widget-link();
+		}
+
+		ul.children { margin: 0 15px; }
+
+		.widget_shopping_cart_content
+		{
+			.cart_list
+			{
+				.remove { line-height: 1em;	letter-spacing: 0;}
+
+				li
+				{
+					padding-left: 15px;				
+					margin-top: 0.5em;
+					margin-bottom: 1em;
+				}
+			}
+
+			strong , .total
+			{
+				font-size: 120%;
+			}
+
+			.buttons
+			{
+				text-align: center;
+			}
+			.button
+			{
+				@include flat-button ();
+				width:80%;
+			}
 		}
 	}
 

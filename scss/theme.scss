@@ -11,6 +11,8 @@
 
 @mixin cta-button()
 {
+	@include font-ui-light();
+	white-space: nowrap;
   padding: 1em 2em;
 
   background: #41a9d5;
@@ -49,6 +51,32 @@
 	}
 }
 
+
+@mixin flat-button($color:$textblack,$background:$background0-primary1)
+{
+	@include font-ui-light ();
+
+	white-space: nowrap;
+	background-image: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	text-shadow: none;
+
+	color: $color;
+	background-color: $background;
+
+	margin: 5px 0;
+	line-height: 1;
+	cursor: pointer;
+	position: relative;
+	text-decoration: none;
+	overflow: visible;
+	padding: .618em 1em;
+	border-radius: 3px;
+	left: auto;
+	border: 0;
+	display: inline-block;
+}
 
 @mixin tags()
 {
@@ -204,11 +232,9 @@ input[type=submit] { width:auto; -webkit-appearance:none; }
 /* THEME */
 
 blockquote {
+	@include font-sans-blockquote();
 	border-left: 4px solid #1a1a1a;
 	color: #686868;
-	font-size: 19px;
-	font-style: italic;
-	line-height: 1.4736842105;
 	margin-bottom: 28px;
 	padding: 0 0 0 24px;
 }
@@ -238,19 +264,15 @@ blockquote > :last-child {
 blockquote cite,
 blockquote small {
 	color: #1a1a1a;
-	font-size: 16px;
-	line-height: 1.75;
 }
 
 blockquote em,
 blockquote i,
 blockquote cite {
-	font-style: normal;
 }
 
 blockquote strong,
 blockquote b {
-	font-weight: 400;
 }
 
 blockquote.alignleft,
@@ -262,7 +284,7 @@ blockquote.alignright {
 }
 
 address {
-	font-style: italic;
+	@include font-sans-address ();
 	margin: 0 0 28px;
 }
 
@@ -310,7 +332,6 @@ del {
 
 sup,
 sub {
-	font-size: 75%;
 	height: 0;
 	line-height: 0;
 	position: relative;
@@ -326,11 +347,9 @@ sup {
 }
 
 small {
-	font-size: 80%;
 }
 
 big {
-	font-size: 125%;
 }
 
 
@@ -412,8 +431,6 @@ table th,
 .mce-item-table th,
 table caption {
 	border-width: 0 1px 1px 0;
-	font-size: 16px;
-	font-weight: 700;
 	padding: 7px;
 	text-align: left;
 	vertical-align: baseline;
@@ -422,7 +439,6 @@ table caption {
 table td,
 .mce-item-table td {
 	border-width: 0 1px 1px 0;
-	font-size: 16px;
 	padding: 7px;
 	vertical-align: baseline;
 }
@@ -521,8 +537,5 @@ fieldset {
 .wp-caption-text,
 .wp-caption-dd {
 	color: #686868;
-	font-size: 13px;
-	font-style: italic;
-	line-height: 1.6153846154;
 	padding-top: 7px;
 }
