@@ -1406,6 +1406,9 @@ nav.pagination {
   word-wrap: break-word;
   text-transform: uppercase;
 }
+.woocommerce-page {
+  margin-top: 25px;
+}
 .woocommerce .page-title {
   display: none;
 }
