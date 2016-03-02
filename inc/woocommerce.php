@@ -16,7 +16,7 @@ remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_l
 
 //add_action   ( 'woocommerce_shop_loop_item_title', 	'staticboards_woocommerce_template_loop_product_title_begin', 		1 );
 //add_action   ( 'woocommerce_shop_loop_item_title', 	'staticboards_woocommerce_template_loop_product_title_end', 		99 );
-//add_action( 'woocommerce_after_shop_loop_item_title', 'staticboards_woocommerce_short_description', 9 );
+add_action( 'woocommerce_after_shop_loop_item_title', 'staticboards_woocommerce_short_description', 15 );
 
 //remove_action ( 'woocommerce_before_shop_loop' , 'woocommerce_result_count',20);
 //remove_action ( 'woocommerce_before_shop_loop' , 'woocommerce_catalog_ordering',30);

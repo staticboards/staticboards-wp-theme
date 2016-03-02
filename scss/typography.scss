@@ -227,7 +227,22 @@ $font-footer-weight-ultrabold: 900;
 	text-transform:uppercase;
 }
 
-@mixin font-price ()
+@mixin font-product-excerpt ()
+{
+
+	font-family: $font-ui-family;
+	font-weight: $font-sans-weight-light; 
+	font-size: 75%;
+
+	line-height: 1.5em;
+	letter-spacing: +0.5pt;
+
+	word-wrap:normal;
+	margin-bottom: 0.5em;	
+}
+
+
+@mixin font-product-price ()
 {
 	font-family: $font-sans-family;
 	font-weight: $font-sans-weight-ultrabold; 

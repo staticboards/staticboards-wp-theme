@@ -1,6 +1,7 @@
 
 .woocommerce
 {
+
 	a{ @include a-noborder(); }
 
 
@@ -59,49 +60,54 @@
 			position: relative;
 			@include panel ();
 
+			p
+			{
+				@include font-product-excerpt();
+				margin: 20px 15px;
+			}
+
 			h3
 			{
 				padding: 0 15px;
+				text-align: center;
+				@include font-ui-text();
 			}
 
-			span.price
+			.price
 			{
-				@include font-price ();
-				color: $color1-primary-3;
+				@include font-product-price ();
 
-				padding: 0 15px;
-				width: 100%;
-				text-align: right;
-				display: block;
+				.amount,del,ins,span
+				{
+					color: $textlight;
+					text-align: center;
+					display: block;
+					height: auto;
+					width: 100%;
+				}
 
-				.amount { margin-left: 0.5em; }
-			}
-
-			del {
-			  color: $textlight;
-			}
-			ins {
-			  background: $background0;
-			  text-decoration: none;
 			}
 
 			.add_to_cart_button , .ajax_add_to_cart
 			{
+				@include font-ui-light();
 				@include cta-button();
 				text-align: center;
-				margin: 1em auto;
 				display: block;
 				width: 80%;
+				margin: 31px auto;
 			}
 
 			.added_to_cart
 			{
+				@include font-ui-text();
+				position: absolute;
+				bottom: 0;
+				width: 100%;
 				text-align: center;
-				margin: 1em auto;
 				display: block;
-				width: 80%;
-				color: $color1-primary-3;
-				@include font-sans-bold ();
+			  color: $textlight !important;
+				margin: 5px auto;
 			}
 
 		}
@@ -124,6 +130,10 @@
 		@include cta-button();
 	}
 
+	form.cart
+	{
+		vertical-align: middle;
+	}
 
 	.tagcloud a
 	{
