@@ -87,7 +87,21 @@
 
 			.add_to_cart_button , .ajax_add_to_cart
 			{
-				width: 100%;
+				@include cta-button();
+				text-align: center;
+				margin: 1em auto;
+				display: block;
+				width: 80%;
+			}
+
+			.added_to_cart
+			{
+				text-align: center;
+				margin: 1em auto;
+				display: block;
+				width: 80%;
+				color: $color1-primary-3;
+				@include font-sans-bold ();
 			}
 
 		}
@@ -99,5 +113,22 @@
 		display: block;
 	}
 
+
+	.added_to_cart
+	{
+		text-align: center;
+	}
+
+	button.button.alt, input.button.alt
+	{
+		@include cta-button();
+	}
+
+
+	.tagcloud a
+	{
+		@include tags();
+		margin-bottom: 15px;
+	}
 
 }

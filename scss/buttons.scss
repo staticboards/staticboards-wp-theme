@@ -1,0 +1,58 @@
+
+/* BUTTON LINK */
+
+.button:link { color:#fff; text-decoration:none; }
+.button:hover, input[type=submit]:hover {background:#ccc; text-decoration:none;}
+
+/* SHORTCODE CUSTOM STYLING */
+.button, .button:visited, input[type=submit] {
+
+	color:$color2;
+	background:$color4;
+
+	border:1px solid $color3;
+	border-radius:6px; 
+
+//	text-shadow:0 -1px 0 rgba(0, 0, 0, 0.5);
+
+	margin:5px 0; padding:12px 15px;
+	text-align:center;
+	display:inline-block; width:auto;
+	cursor:pointer;
+}
+
+.button:hover, input[type=submit]:hover {
+	color:$color2;
+	background:$color3;
+}
+
+
+/* BUTTON LINKS */
+
+.buttonlink
+{
+	text-align: center;
+
+	background-color: #656D71;
+	border: 1px #888 solid;
+	border-radius: 1px;
+	@include box-shadow($horizontal:0, $vertical:1px, $blur:3px, $color:rgb(0,9,0), $opacity: 0.3 );
+  text-shadow: 0 1px 0 rgba(0,0,0,0.05);
+
+	padding: 1em 20px;
+	margin: 3em 0em;
+
+	a {
+		font-weight: $font-sans-weight-normal;
+		color: $background0-primary1;
+		@include a-noborder();
+		&:hover { text-decoration: none ; }
+	}
+
+}
+
+.cta-button a {
+
+	@include cta-button();
+}
+

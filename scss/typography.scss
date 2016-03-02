@@ -43,8 +43,9 @@ $font-footer-weight-ultrabold: 900;
 	word-spacing: +1px;
 
 	word-wrap:break-word;
-}
 
+  -webkit-font-smoothing: antialiased;
+}
 
 @mixin font-sans-light ()
 {
