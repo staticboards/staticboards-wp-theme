@@ -59,6 +59,7 @@
 			float:left;
 			position: relative;
 			@include panel ();
+			min-height: 400px;
 
 			p
 			{
@@ -71,19 +72,28 @@
 				padding: 0 15px;
 				text-align: center;
 				@include font-ui-text();
+				height: 50px;
+				overflow: hidden;
 			}
 
 			.price
 			{
 				@include font-product-price ();
+				color: $textlight;
+				display: block;
+				text-align: center;
+				width: 100%;
+				height: 50px;
+				overflow: hidden;
 
-				.amount,del,ins,span
+				ins
 				{
-					color: $textlight;
-					text-align: center;
-					display: block;
-					height: auto;
-					width: 100%;
+					color: $color1-primary-3;
+				}
+
+				del
+				{
+					display: none;
 				}
 
 			}
@@ -94,7 +104,10 @@
 				@include cta-button();
 				text-align: center;
 				display: block;
+				position: absolute;
+				bottom: 0;
 				width: 80%;
+				left: 0; right: 0;
 				margin: 31px auto;
 			}
 
