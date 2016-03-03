@@ -52,7 +52,7 @@
 }
 
 
-@mixin flat-button($color:$textblack,$background:$background0-primary1)
+@mixin flat-button($color:$textblack,$background:$background0-primary2)
 {
 	@include font-ui-light ();
 
@@ -76,6 +76,13 @@
 	left: auto;
 	border: 0;
 	display: inline-block;
+
+	&:hover
+	{
+		background-color: $background0-primary1;
+		text-decoration: none;
+		background-image: no
+	}
 }
 
 @mixin tags()

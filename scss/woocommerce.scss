@@ -1,6 +1,12 @@
 .woocommerce-page
 {
 	margin-top: 25px;
+
+	#content table.cart td.actions .input-text,
+	table.cart td.actions .input-text
+	{
+		width: auto;
+	}
 }
 
 .woocommerce
@@ -48,10 +54,28 @@
 		font-size: 12px;
 	}
 
+	#content table.cart td.actions .input-text,
+	table.cart td.actions .input-text,
+	{
+	    width: auto;
+	}
+
+	#respond input#submit.alt, a.button.alt, button.button.alt, input.button.alt
+	{
+		@include cta-button();
+		text-align: center;
+		display: inline;
+	}
+
+	#respond input#submit, a.button, button.button, input.button
+	{
+		@include flat-button ();
+		text-align: center;
+		display: inline;
+	}
+
 	ul.products
 	{
-		margin-top: 50px;
-
 		li.product
 		{
 			list-style-type: none;
@@ -96,28 +120,17 @@
 				@include cta-button();
 				text-align: center;
 				display: block;
-				position: absolute;
-				bottom: 0;
 				width: 80%;
-				left: 0; right: 0;
 				margin: 31px auto;
 			}
 
 			.added_to_cart
 			{
-				@include font-ui-text();
-				position: absolute;
-				bottom: 0;
-				width: 100%;
-				text-align: center;
-				display: block;
-			  color: $textlight !important;
-				margin: 5px auto;
+				display: none;
 			}
 
 		}
 	}
-
 
 	.widget
 	{
@@ -162,6 +175,7 @@
 			{
 				text-align: center;
 			}
+
 			.button
 			{
 				@include flat-button ();
@@ -196,6 +210,59 @@
 	{
 		@include tags();
 		margin-bottom: 15px;
+	}
+
+	table.shop_table
+	{
+		@include panel ();		
+
+		.coupon
+		{
+			vertical-align: middle;
+		}
+
+		thead , tfoot
+		{
+			th,td
+			{
+			border:none;
+			background-color: $background0-primary1;
+			}
+		}
+
+		tbody
+		{		
+			th
+			{
+				border:none;
+				border-top: 1px solid $background0-primary1;
+			}
+
+			td
+			{
+				padding: 15px 12px;
+				border:none;
+				border-top: 1px solid $background0-primary1;
+			}
+		}
+
+		.cart-subtotal , .shipping , .order-total
+		{
+			th { text-align: left; }
+			td { text-align: right; }
+			a { @include flat-button(); }
+		}
+
+		td.product-price , td.product-total , td.product-subtotal
+		{
+			text-align: right;			
+		}
+
+		td.product-name a
+		{
+			@include font-sans-bold();
+		}
+
 	}
 
 }

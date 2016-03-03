@@ -1410,6 +1410,10 @@ nav.pagination {
 .woocommerce-page {
   margin-top: 25px;
 }
+.woocommerce-page #content table.cart td.actions .input-text,
+.woocommerce-page table.cart td.actions .input-text {
+  width: auto;
+}
 .woocommerce .page-title {
   display: none;
 }
@@ -1482,8 +1486,101 @@ nav.pagination {
   position: relative;
   font-size: 12px;
 }
-.woocommerce ul.products {
-  margin-top: 50px;
+.woocommerce #content table.cart td.actions .input-text,
+.woocommerce table.cart td.actions .input-text {
+  width: auto;
+}
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt,
+.woocommerce button.button.alt, .woocommerce input.button.alt {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.3pt;
+  line-height: 1em;
+  word-spacing: 1px;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding: 1em 2em;
+  background: #41a9d5;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #298fba),
+    color-stop(1, #41a9d5));
+  background: -ms-linear-gradient(bottom, #298fba, #41a9d5);
+  background: -moz-linear-gradient(center bottom, #298fba 0%, #41a9d5 100%);
+  background: -o-linear-gradient(#41a9d5, #298fba);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#41a9d5',
+    endColorstr='#298fba', GradientType=0);
+  border-color: #2685ad #247fa5 #227598 #247fa5;
+  border: 1px solid;
+  color: #ffffff !important;
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  border-radius: 0.25em;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.065);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.065);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.065);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  text-align: center;
+  display: inline;
+}
+.woocommerce #respond input#submit.alt:visited,
+.woocommerce #respond input#submit.alt:active,
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:visited,
+.woocommerce a.button.alt:active, .woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:visited, .woocommerce button.button.alt:active,
+.woocommerce button.button.alt:hover, .woocommerce input.button.alt:visited,
+.woocommerce input.button.alt:active, .woocommerce input.button.alt:hover {
+  color: #ffffff !important;
+}
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+  background: #49add7;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2b95c2),
+    color-stop(1, #49add7));
+  background: -ms-linear-gradient(bottom, #2b95c2, #49add7);
+  background: -moz-linear-gradient(center bottom, #2b95c2 0%, #49add7 100%);
+  background: -o-linear-gradient(#49add7, #2b95c2);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#49add7',
+    endColorstr='#2b95c2', GradientType=0);
+  border-color: #288cb6 #2685ad #247ca1 #2685ad;
+  color: #ffffff;
+}
+.woocommerce #respond input#submit, .woocommerce a.button,
+.woocommerce button.button, .woocommerce input.button {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.3pt;
+  line-height: 1em;
+  word-spacing: 1px;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-image: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  text-shadow: none;
+  color: #222;
+  background-color: #e0e0e0;
+  margin: 5px 0;
+  line-height: 1;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  overflow: visible;
+  padding: 0.618em 1em;
+  border-radius: 3px;
+  left: auto;
+  border: 0;
+  display: inline-block;
+  text-align: center;
+  display: inline;
+}
+.woocommerce #respond input#submit:hover, .woocommerce a.button:hover,
+.woocommerce button.button:hover, .woocommerce input.button:hover {
+  background-color: #e5e5e5;
+  text-decoration: none;
+  background-image: no;
 }
 .woocommerce ul.products li.product {
   list-style-type: none;
@@ -1563,11 +1660,7 @@ nav.pagination {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
   text-align: center;
   display: block;
-  position: absolute;
-  bottom: 0;
   width: 80%;
-  left: 0;
-  right: 0;
   margin: 31px auto;
 }
 .woocommerce ul.products li.product .add_to_cart_button:visited,
@@ -1592,21 +1685,7 @@ nav.pagination {
   color: #ffffff;
 }
 .woocommerce ul.products li.product .added_to_cart {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.5pt;
-  line-height: 1.7em;
-  word-spacing: 1px;
-  word-wrap: break-word;
-  text-transform: uppercase;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  display: block;
-  color: #bbb !important;
-  margin: 5px auto;
+  display: none;
 }
 .woocommerce .widget {
   font-family: 'Lato', sans-serif;
@@ -1688,7 +1767,7 @@ nav.pagination {
   -webkit-box-shadow: none;
   text-shadow: none;
   color: #222;
-  background-color: #e5e5e5;
+  background-color: #e0e0e0;
   margin: 5px 0;
   line-height: 1;
   cursor: pointer;
@@ -1701,6 +1780,11 @@ nav.pagination {
   border: 0;
   display: inline-block;
   width: 80%;
+}
+.woocommerce .widget .widget_shopping_cart_content .button:hover {
+  background-color: #e5e5e5;
+  text-decoration: none;
+  background-image: no;
 }
 .woocommerce .product {
   margin-bottom: 100px;
@@ -1772,4 +1856,90 @@ nav.pagination {
   -moz-box-shadow: 0px 0px 5px 1px rgba(229, 229, 229, 0.45);
   -webkit-box-shadow: 0px 0px 5px 1px rgba(229, 229, 229, 0.45);
   margin-bottom: 15px;
+}
+.woocommerce table.shop_table {
+  border: 1px solid #e0e0e0;
+  background-color: #FBFBFB;
+  box-shadow: 0px 0px 5px 1px rgba(229, 229, 229, 0.75);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(229, 229, 229, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(229, 229, 229, 0.75);
+}
+.woocommerce table.shop_table .coupon {
+  vertical-align: middle;
+}
+.woocommerce table.shop_table thead th, .woocommerce table.shop_table thead td,
+.woocommerce table.shop_table tfoot th, .woocommerce table.shop_table tfoot td {
+  border: none;
+  background-color: #e5e5e5;
+}
+.woocommerce table.shop_table tbody th {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+}
+.woocommerce table.shop_table tbody td {
+  padding: 15px 12px;
+  border: none;
+  border-top: 1px solid #e5e5e5;
+}
+.woocommerce table.shop_table .cart-subtotal th,
+.woocommerce table.shop_table .shipping th,
+.woocommerce table.shop_table .order-total th {
+  text-align: left;
+}
+.woocommerce table.shop_table .cart-subtotal td,
+.woocommerce table.shop_table .shipping td,
+.woocommerce table.shop_table .order-total td {
+  text-align: right;
+}
+.woocommerce table.shop_table .cart-subtotal a,
+.woocommerce table.shop_table .shipping a,
+.woocommerce table.shop_table .order-total a {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.3pt;
+  line-height: 1em;
+  word-spacing: 1px;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-image: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  text-shadow: none;
+  color: #222;
+  background-color: #e0e0e0;
+  margin: 5px 0;
+  line-height: 1;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  overflow: visible;
+  padding: 0.618em 1em;
+  border-radius: 3px;
+  left: auto;
+  border: 0;
+  display: inline-block;
+}
+.woocommerce table.shop_table .cart-subtotal a:hover,
+.woocommerce table.shop_table .shipping a:hover,
+.woocommerce table.shop_table .order-total a:hover {
+  background-color: #e5e5e5;
+  text-decoration: none;
+  background-image: no;
+}
+.woocommerce table.shop_table td.product-price,
+.woocommerce table.shop_table td.product-total,
+.woocommerce table.shop_table td.product-subtotal {
+  text-align: right;
+}
+.woocommerce table.shop_table td.product-name a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.1pt;
+  line-height: 1.7em;
+  word-spacing: 1px;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
 }
