@@ -6,8 +6,9 @@
 .widget
 {
 	a {
+		color: $color4;
 		@include a-noborder ();
-		@include font-sans-bold();
+		@include font-sans-light();
 	}
 
 	li

@@ -1186,6 +1186,7 @@ fieldset {
   padding-bottom: 6em;
 }
 .widget a {
+  color: #2980B9;
   text-decoration: none;
   outline: none;
   font-family: 'Open Sans', sans-serif;
@@ -1195,7 +1196,7 @@ fieldset {
   word-spacing: 1px;
   word-wrap: break-word;
   -webkit-font-smoothing: antialiased;
-  font-weight: 600;
+  font-weight: 300;
 }
 .widget a:link {
   box-shadow: none;
