@@ -1197,6 +1197,9 @@ fieldset {
   word-wrap: break-word;
   -webkit-font-smoothing: antialiased;
   font-weight: 300;
+  font-style: italic;
+  border-left: 4px solid #ECF0F1;
+  padding-left: 12px;
 }
 .widget a:link {
   box-shadow: none;
@@ -1212,6 +1215,7 @@ fieldset {
 }
 .widget li {
   list-style: none;
+  margin-bottom: 10px;
 }
 .post-thumbnail {
   margin-bottom: 2em;
@@ -1222,7 +1226,7 @@ img.img-fullwidth {
   height: auto;
 }
 .comments-area {
-  margin-top: 150px;
+  margin-top: 60px;
 }
 .comments-title {
   color: #bbb;
