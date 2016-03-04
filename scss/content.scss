@@ -10,14 +10,13 @@
 		@include a-noborder ();
 		@include font-sans-light();
 		font-style: italic;
-
-		border-left: 4px solid $color2;
-		padding-left: 12px;
 	}
 
 	li
 	{
 		list-style: none;
+		border-left: 4px solid $color2;
+		padding-left: 12px;
 		margin-bottom: 10px;
 	}
 }
