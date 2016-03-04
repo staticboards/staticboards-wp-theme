@@ -1,7 +1,7 @@
 <?php
 
 
-if ( ! function_exists( 'twentysixteen_entry_meta' ) ) :
+if ( ! function_exists( 'staticboards_entry_meta' ) ) :
 
 function staticboards_entry_meta() {
 

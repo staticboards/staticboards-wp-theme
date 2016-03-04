@@ -1,5 +1,3 @@
-<!-- twentysixteen_post_thumbnail(); -->
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 			<?php staticboards_post_thumbnail () ; ?>
@@ -57,4 +55,4 @@
 
 </article><!-- #post-## -->
 
-<!-- twentysixteen_entry_meta(); -->
+<!-- staticboards_entry_meta(); -->
