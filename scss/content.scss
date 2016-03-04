@@ -3,6 +3,19 @@
 	padding-bottom: 6em;
 }
 
+.widget
+{
+	a {
+		@include a-noborder ();
+		@include font-sans-bold();
+	}
+
+	li
+	{
+		list-style: none;
+	}
+}
+
 .entry-header
 {
 }

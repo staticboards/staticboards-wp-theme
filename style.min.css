@@ -1185,6 +1185,33 @@ fieldset {
 #single, #page {
   padding-bottom: 6em;
 }
+.widget a {
+  text-decoration: none;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.1pt;
+  line-height: 1.7em;
+  word-spacing: 1px;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+}
+.widget a:link {
+  box-shadow: none;
+}
+.widget a:visited {
+  box-shadow: none;
+}
+.widget a:hover {
+  box-shadow: none;
+}
+.widget a:active {
+  box-shadow: none;
+}
+.widget li {
+  list-style: none;
+}
 .post-thumbnail {
   margin-bottom: 2em;
 }
