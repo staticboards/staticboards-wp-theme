@@ -65,6 +65,13 @@ $font-footer-weight-ultrabold: 900;
 	font-weight: $font-sans-weight-semibold; 
 }
 
+@mixin font-sans-small ()
+{
+	@include font-sans-text();
+	font-weight: $font-sans-weight-light; 
+	font-size: 12px;
+}
+
 @mixin font-sans-h1 ()
 {
 	font-family: $font-sans-family;

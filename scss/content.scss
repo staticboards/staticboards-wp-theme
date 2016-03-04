@@ -51,6 +51,21 @@ img.img-fullwidth
 	padding: 0;
 }
 
+.comment-body
+{
+
+	.comment-meta
+	{
+		a { @include a-noborder (); @include font-sans-small(); }
+	}
+
+	.reply
+	{
+		a { @include flat-button (); }
+	}
+
+}
+
 ul.children
 {
 	margin: 1em 0px;

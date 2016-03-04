@@ -149,12 +149,12 @@ h1,h2,h3 {
 			}
 		&:hover {
 			text-decoration: none;
-			color: $textblack;
+			color: $color0;
 			box-shadow: none;
 			}
 		&:active {
 			text-decoration: none;
-			color: $textblack;
+			color: $color0;
 			box-shadow: none;
 			}
 	}
@@ -173,9 +173,11 @@ h4, h5, h6 {
 			}
 		&:hover {
 			box-shadow: none;
+			color: $color2;
 			}
 		&:active {
 			box-shadow: none;
+			color: $color2;
 			}
 	}
 }

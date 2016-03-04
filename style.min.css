@@ -305,12 +305,12 @@ h1 a:visited, h2 a:visited, h3 a:visited {
 }
 h1 a:hover, h2 a:hover, h3 a:hover {
   text-decoration: none;
-  color: #222;
+  color: #2C3E50;
   box-shadow: none;
 }
 h1 a:active, h2 a:active, h3 a:active {
   text-decoration: none;
-  color: #222;
+  color: #2C3E50;
   box-shadow: none;
 }
 h4, h5, h6 {
@@ -324,9 +324,11 @@ h4 a:visited, h5 a:visited, h6 a:visited {
 }
 h4 a:hover, h5 a:hover, h6 a:hover {
   box-shadow: none;
+  color: #ECF0F1;
 }
 h4 a:active, h5 a:active, h6 a:active {
   box-shadow: none;
+  color: #ECF0F1;
 }
 label {
   padding: 0;
@@ -567,12 +569,12 @@ a:visited {
 }
 a:hover {
   text-decoration: none;
-  color: #222;
+  color: #2C3E50;
   box-shadow: 0 1px 0 0 #2980B9;
 }
 a:active {
   text-decoration: none;
-  color: #222;
+  color: #2C3E50;
   box-shadow: 0 1px 0 0 #222;
 }
 a img {
@@ -1201,6 +1203,64 @@ img.img-fullwidth {
   margin: 0;
   padding: 0;
 }
+.comment-body .comment-meta a {
+  text-decoration: none;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.1pt;
+  line-height: 1.7em;
+  word-spacing: 1px;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  font-size: 12px;
+}
+.comment-body .comment-meta a:link {
+  box-shadow: none;
+}
+.comment-body .comment-meta a:visited {
+  box-shadow: none;
+}
+.comment-body .comment-meta a:hover {
+  box-shadow: none;
+}
+.comment-body .comment-meta a:active {
+  box-shadow: none;
+}
+.comment-body .reply a {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.3pt;
+  line-height: 1em;
+  word-spacing: 1px;
+  word-wrap: break-word;
+  text-transform: uppercase;
+  white-space: nowrap;
+  background-image: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  text-shadow: none;
+  color: #222;
+  background-color: #e0e0e0;
+  margin: 5px 0;
+  line-height: 1;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  overflow: visible;
+  padding: 0.618em 1em;
+  border-radius: 3px;
+  left: auto;
+  border: 0;
+  display: inline-block;
+}
+.comment-body .reply a:hover {
+  background-color: #e5e5e5;
+  text-decoration: none;
+  background-image: no;
+}
 ul.children {
   margin: 1em 0px;
   padding: 0;
@@ -1449,12 +1509,12 @@ nav.pagination {
 }
 .woocommerce .entry-content a:hover {
   text-decoration: none;
-  color: #222;
+  color: #2C3E50;
   box-shadow: 0 1px 0 0 #2980B9;
 }
 .woocommerce .entry-content a:active {
   text-decoration: none;
-  color: #222;
+  color: #2C3E50;
   box-shadow: 0 1px 0 0 #222;
 }
 .woocommerce select {
