@@ -1781,19 +1781,22 @@ nav.pagination {
 }
 .woocommerce .widget {
   font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 11px;
+  font-style: normal;
   line-height: 1.1em;
   letter-spacing: 0.5pt;
   line-height: 1em;
   letter-spacing: 0;
   word-wrap: normal;
   margin-bottom: 30px;
+  color: #222;
 }
 .woocommerce .widget strong {
   font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 11px;
+  font-style: normal;
   line-height: 1.1em;
   letter-spacing: 0.5pt;
   line-height: 1em;
@@ -1815,10 +1818,13 @@ nav.pagination {
 .woocommerce .widget ul, .woocommerce .widget li {
   list-style: none;
   padding-left: 0;
+  border: none;
 }
 .woocommerce .widget a {
+  color: #222;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
+  font-style: normal;
   font-size: 11px;
   line-height: 1.1em;
   letter-spacing: 0.5pt;

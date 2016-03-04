@@ -135,6 +135,8 @@
 		@include font-product-widget-text();
 		margin-bottom: 30px;
 
+		color: $textblack;
+
 		strong { @include font-product-widget-strong () };
 		h3 { @include font-product-widget-header(); }
 		
@@ -142,9 +144,11 @@
 		{
 			list-style: none;
 			padding-left: 0;
+			border: none;
 		}
 
 		a {
+			color: $textblack;
 			@include font-product-widget-link();
 		}
 
