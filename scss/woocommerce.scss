@@ -11,14 +11,12 @@
 
 .woocommerce
 {
-
 	.page-title
 	{
 		display:none;
 	}
 
 	a{ @include a-noborder(); }
-
 
 	.entry-content
 	{
@@ -263,6 +261,19 @@
 			@include font-sans-bold();
 		}
 
+	}
+
+
+	.yith_magnifier_gallery
+	{
+		li
+		{
+			margin-right: 15px;
+			border: solid 3px $background0-primary1;
+
+			a { margin: 0; }
+			&:last-child { margin-right: 0px; }
+		}
 	}
 
 }

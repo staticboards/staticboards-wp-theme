@@ -1943,3 +1943,13 @@ nav.pagination {
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
 }
+.woocommerce .yith_magnifier_gallery li {
+  margin-right: 15px;
+  border: solid 3px #e5e5e5;
+}
+.woocommerce .yith_magnifier_gallery li a {
+  margin: 0;
+}
+.woocommerce .yith_magnifier_gallery li:last-child {
+  margin-right: 0px;
+}
