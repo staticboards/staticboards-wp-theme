@@ -1185,7 +1185,7 @@ fieldset {
 #single, #page {
   padding-bottom: 6em;
 }
-.widget a {
+.widget_recent_entries a, .widget_recent_comments a {
   color: #2980B9;
   text-decoration: none;
   outline: none;
@@ -1199,19 +1199,19 @@ fieldset {
   font-weight: 300;
   font-style: italic;
 }
-.widget a:link {
+.widget_recent_entries a:link, .widget_recent_comments a:link {
   box-shadow: none;
 }
-.widget a:visited {
+.widget_recent_entries a:visited, .widget_recent_comments a:visited {
   box-shadow: none;
 }
-.widget a:hover {
+.widget_recent_entries a:hover, .widget_recent_comments a:hover {
   box-shadow: none;
 }
-.widget a:active {
+.widget_recent_entries a:active, .widget_recent_comments a:active {
   box-shadow: none;
 }
-.widget li {
+.widget_recent_entries li, .widget_recent_comments li {
   list-style: none;
   border-left: 4px solid #ECF0F1;
   padding-left: 12px;
