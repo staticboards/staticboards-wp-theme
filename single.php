@@ -14,12 +14,6 @@
 		<div class="container-fluid postwidth">
 
 			<div class="row">
-				<header class="col-sm-12 entry-header">
-					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-				</header>
-			</div>
-
-			<div class="row">
 
 				<div class="col-sm-8">
 				<?php get_template_part( 'template-parts/content', 'single' ); ?>

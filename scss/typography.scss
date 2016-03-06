@@ -9,6 +9,12 @@ $font-sans-weight-semibold: 600;
 $font-sans-weight-bold: 700;
 $font-sans-weight-ultrabold: 700;
 
+$font-header-family: 'Raleway';
+$font-header-weight-normal: 500;
+$font-header-weight-semibold: 600;
+$font-header-weight-bold: 700;
+$font-header-weight-ultrabold: 800;
+
 $font-monospace-family: 'monospace';
 $font-monospace-weight-thin: 300;
 $font-monospace-weight-light: 300;
@@ -74,12 +80,12 @@ $font-footer-weight-ultrabold: 900;
 
 @mixin font-sans-h1 ()
 {
-	font-family: $font-sans-family;
-	font-weight: $font-sans-weight-ultrabold;
-	font-size: 36px;
+	font-family: $font-header-family;
+	font-weight: $font-header-weight-ultrabold; 
+	font-size: 32px;
 
 	line-height: 1.2em;
-	letter-spacing: -1pt;
+	letter-spacing: 0pt;
 
 	word-wrap:normal;
 
@@ -89,12 +95,12 @@ $font-footer-weight-ultrabold: 900;
 
 @mixin font-sans-h2 ()
 {
-	font-family: $font-sans-family;
-	font-weight: $font-sans-weight-normal; 
-	font-size: 36px;
+	font-family: $font-header-family;
+	font-weight: $font-header-weight-bold; 
+	font-size: 28px;
 
 	line-height: 1.2em;
-	letter-spacing: -1pt;
+	letter-spacing: -0.5pt;
 
 	word-wrap:normal;
   	margin-bottom: 1em;
@@ -104,7 +110,7 @@ $font-footer-weight-ultrabold: 900;
 {
 	font-family: $font-sans-family;
 	font-weight: $font-sans-weight-semibold; 
-	font-size: 135%;
+	font-size: 24px;
 
 	line-height: 1.5em;
 	letter-spacing: -1pt;
@@ -117,7 +123,7 @@ $font-footer-weight-ultrabold: 900;
 {
 	font-family: $font-sans-family;
 	font-weight: $font-sans-weight-normal; 
-	font-size: 110%;
+	font-size: 18px;
 
 	word-wrap:normal;
 }

@@ -239,28 +239,28 @@ body {
   font-weight: 400;
 }
 h1, h1 > a {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 36px;
+  font-family: 'Raleway';
+  font-weight: 800;
+  font-size: 32px;
   line-height: 1.2em;
-  letter-spacing: -1pt;
+  letter-spacing: 0pt;
   word-wrap: normal;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
 h2, h2 > a {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 36px;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 28px;
   line-height: 1.2em;
-  letter-spacing: -1pt;
+  letter-spacing: -0.5pt;
   word-wrap: normal;
   margin-bottom: 1em;
 }
 h3, h3 > a {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  font-size: 135%;
+  font-size: 24px;
   line-height: 1.5em;
   letter-spacing: -1pt;
   word-wrap: normal;
@@ -269,7 +269,7 @@ h3, h3 > a {
 h4, h4 > a {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: 110%;
+  font-size: 18px;
   word-wrap: normal;
 }
 p {
@@ -485,7 +485,7 @@ hr {
   margin-bottom: 28px;
 }
 ul, ol {
-  margin: 0 0 28px 0;
+  margin: 0 0 28px 1em;
   padding: 0;
 }
 ul {

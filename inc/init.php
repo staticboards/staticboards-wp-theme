@@ -19,10 +19,11 @@ function register_staticboards_styles(){
     wp_register_style( 'staticboards-css-bootstrap-print', get_template_directory_uri() . '/static/css/bootstrap.min.css', array(), false, 'print' );
 
     wp_register_style( 'staticboards-css-opensans', 'https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,800italic,800,700italic,700,600italic,600,400italic', array(), false, 'screen' );
-    wp_register_style( 'staticboards-css-droid-serif', get_template_directory_uri() . '/static/css/droid-serif.css', array(), false, 'screen' );
-    wp_register_style( 'staticboards-css-ptsans', get_template_directory_uri() . '/static/css/ptsans.css', array(), false, 'screen' );
+//  wp_register_style( 'staticboards-css-droid-serif', get_template_directory_uri() . '/static/css/droid-serif.css', array(), false, 'screen' );
+//  wp_register_style( 'staticboards-css-ptsans', get_template_directory_uri() . '/static/css/ptsans.css', array(), false, 'screen' );
     wp_register_style( 'staticboards-css-lato', 'https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' , array(), false, 'screen' );
-    wp_register_style( 'staticboards-css-noto-sans', 'https://fonts.googleapis.com/css?family=Noto+Sans:400,700' , array(), false, 'screen' );
+//  wp_register_style( 'staticboards-css-noto-sans', 'https://fonts.googleapis.com/css?family=Noto+Sans:400,700' , array(), false, 'screen' );
+    wp_register_style( 'staticboards-css-raleway', 'https://fonts.googleapis.com/css?family=Raleway:500,600,700,800' , array(), false, 'screen' );
 
     wp_register_style( 'staticboards-css-font-awesome', get_template_directory_uri() . '/static/css/font-awesome-4.3.0.min.css', array(), false, 'screen' );
 
@@ -48,10 +49,12 @@ function enqueue_staticboards_styles(){
     wp_enqueue_style( 'staticboards-css-bootstrap-print' );
 
     wp_enqueue_style( 'staticboards-css-opensans' );
-    wp_enqueue_style( 'staticboards-css-droid-serif' );
-    wp_enqueue_style( 'staticboards-css-ptsans' );
     wp_enqueue_style( 'staticboards-css-lato' );
-    wp_enqueue_style( 'staticboards-css-noto-sans' );
+    //wp_enqueue_style( 'staticboards-css-noto-sans' );
+    //wp_enqueue_style( 'staticboards-css-droid-serif' );
+    //wp_enqueue_style( 'staticboards-css-ptsans' );
+    wp_enqueue_style( 'staticboards-css-raleway' );
+
     wp_enqueue_style( 'staticboards-css-font-awesome' );
 
     wp_enqueue_style( 'staticboards-css-min' );
