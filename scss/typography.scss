@@ -65,6 +65,12 @@ $font-footer-weight-ultrabold: 900;
 	font-weight: $font-sans-weight-normal; 
 }
 
+@mixin font-sans-link ()
+{
+	@include font-sans-text();
+	font-weight: $font-sans-weight-semibold; 
+}
+
 @mixin font-sans-bold ()
 {
 	@include font-sans-text();

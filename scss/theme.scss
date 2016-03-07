@@ -464,7 +464,7 @@ figure {
 }
 
 a {
-	@include font-sans-text ();
+	@include font-sans-link ();
 	@include a-border();
 
 	img {

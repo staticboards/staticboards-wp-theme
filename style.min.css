@@ -553,6 +553,7 @@ a {
   word-spacing: 1px;
   word-wrap: break-word;
   -webkit-font-smoothing: antialiased;
+  font-weight: 600;
   text-decoration: none;
   outline: none;
 }
