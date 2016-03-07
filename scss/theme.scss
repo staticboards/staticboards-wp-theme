@@ -506,18 +506,21 @@ fieldset {
 
 @media only screen and (min-width : 730px) {
 
+	@mixin fullwidth( $totalcols:12, $postcols:8 , $postwidth: 700px , $postmargin: 15px)
+	{
+		max-width: $totalcols * ($postwidth + 2*$postmargin ) / $postcols ;
+	}
+
 	.pagewidth
 	{
-		max-width: 1200px;	
-
+		@include fullwidth ();
 		margin-right: auto;
 		margin-left: auto;
 	}
 
 	.postwidth
 	{
-		max-width: 1200px;	
-
+		@include fullwidth ();
 		margin-right: auto;
 		margin-left: auto;
 	}
