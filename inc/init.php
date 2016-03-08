@@ -190,6 +190,15 @@ function staticboards_theme_support() {
     add_theme_support( 'title-tag' );
     add_theme_support( 'post-thumbnails' );
     set_post_thumbnail_size( 1200, 9999 );    
+
+    add_theme_support( 'html5', array(
+        'search-form',
+        'comment-form',
+        'comment-list',
+        'gallery',
+        'caption',
+    ) );
+    
 }
 
 if ( function_exists( 'staticboards_theme_support' ) ) {
