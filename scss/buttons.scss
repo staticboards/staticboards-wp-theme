@@ -44,11 +44,8 @@
 
 	a {
 		font-weight: $font-sans-weight-normal;
-		color: $background0-primary1;
-		@include a-noborder();
-		&:hover { text-decoration: none ; }
+		@include a-borderhover($linkcolor:$background0-primary-1,$hovercolor:$background0-primary-1);
 	}
-
 }
 
 .cta-button a {

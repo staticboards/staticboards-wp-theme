@@ -29,50 +29,192 @@
 	-webkit-box-shadow: $horizontal $vertical $blur $size rgba($color, $opacity);
 }
 
-@mixin a-noborder
+@mixin a-noborder($linkcolor:$textblack,$hovercolor:$color4-primary-4)
 {
 	text-decoration: none;
 	outline: none;
+	color:$linkcolor;
 
 	&:link { 
 		box-shadow: none;
+		color:$linkcolor;
 		}
 	&:visited {
 		box-shadow: none;
+		color:$linkcolor;
 		}
 	&:hover {
 		box-shadow: none;
+		color:$hovercolor;
 		}
 	&:active {
 		box-shadow: none;
+		color:$hovercolor;
 		}
 }
 
-@mixin a-border($hovercolor:$color4)
+@mixin a-borderhover($linkcolor:$color4-primary-4,$hovercolor:$color4-primary-4)
 {
 	text-decoration: none;
 	outline: none;
-
+	color:$linkcolor;
 
 	&:link { 
-		text-decoration: none;
-		color: $textblack;
-		box-shadow: 0 1px 0 0 $textblack;
+		box-shadow: none;
+		color:$linkcolor;
 		}
 	&:visited {
-		text-decoration: none;
-		color: $textblack;
-		box-shadow: 0 1px 0 0 $textblack;
+		box-shadow: none;
+		color:$linkcolor;
 		}
 	&:hover {
 		text-decoration: none;
-		color: $color0;
+		color: $hovercolor;
 		box-shadow: 0 1px 0 0 $hovercolor;
 		}
 	&:active {
 		text-decoration: none;
-		color: $color0;
-		box-shadow: 0 1px 0 0 $textblack;
+		color: $hovercolor;
+		box-shadow: 0 1px 0 0 $hovercolor;
 		}
+}
 
+@mixin a-border($linkcolor:$textblack,$hovercolor:$color4)
+{
+	text-decoration: none;
+	outline: none;
+
+	&:link { 
+		text-decoration: none;
+		color: $linkcolor;
+		box-shadow: 0 1px 0 0 $linkcolor;
+		}
+	&:visited {
+		text-decoration: none;
+		color: $linkcolor;
+		box-shadow: 0 1px 0 0 $linkcolor;
+		}
+	&:hover {
+		text-decoration: none;
+		color: $hovercolor;
+		box-shadow: 0 1px 0 0 $hovercolor;
+		}
+	&:active {
+		text-decoration: none;
+		color: $hovercolor;
+		box-shadow: 0 1px 0 0 $hovercolor;
+		}
+}
+
+/* BORDERS */
+
+@mixin panel()
+{
+		border: 1px solid $background0-primary-2;
+		background-color: $background0-primary-4;
+		@include box-shadow($size: 1px, $color: $background0-primary-1, $opacity: 0.75);
+}
+
+@mixin cta-button()
+{
+	@include font-ui-light();
+  padding: 1em 2em;
+
+  background: #41a9d5;
+  background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#298fba),color-stop(1,#41a9d5));
+  background: -ms-linear-gradient(bottom,#298fba,#41a9d5);
+  background: -moz-linear-gradient(center bottom,#298fba 0%,#41a9d5 100%);
+  background: -o-linear-gradient(#41a9d5,#298fba);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#41a9d5', endColorstr='#298fba', GradientType=0);
+  border-color: #2685ad #247fa5 #227598 #247fa5;
+  border: 1px solid;
+  color: $background0-primary-0 !important;
+
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  border-radius: 0.25em;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.065);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.065);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.065);
+  text-shadow: 0 1px 0 rgba(0,0,0,0.05);
+
+	&:visited,
+	&:active,
+	&:hover {
+	  color: $background0-primary-0 !important;
+	}
+
+	&:hover {
+	  background: #49add7;
+	  background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#2b95c2),color-stop(1,#49add7));
+	  background: -ms-linear-gradient(bottom,#2b95c2,#49add7);
+	  background: -moz-linear-gradient(center bottom,#2b95c2 0%,#49add7 100%);
+	  background: -o-linear-gradient(#49add7,#2b95c2);
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#49add7', endColorstr='#2b95c2', GradientType=0);
+	  border-color: #288cb6 #2685ad #247ca1 #2685ad;
+	  color: $background0-primary-0;
+	}
+}
+
+
+@mixin flat-button($color:$textblack,$background:$background0-primary-2)
+{
+	@include font-ui-light ();
+
+	background-image: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	text-shadow: none;
+
+	color: $color;
+	background-color: $background;
+
+	margin: 5px 0;
+	cursor: pointer;
+	position: relative;
+	text-decoration: none;
+	overflow: visible;
+	padding: .618em 1em;
+	border-radius: 3px;
+	left: auto;
+	border: 0;
+	display: inline-block;
+
+	&:hover
+	{
+		background-color: $background0-primary-1;
+		text-decoration: none;
+		background-image: no
+	}
+}
+
+@mixin bottom-gravity-form ()
+{
+	li {
+		list-style-type: none;	
+	}
+
+	label
+	{
+		margin-top: 1em;
+		margin-bottom: 0.5em;
+	}
+
+	.gfield_required {
+	    color: $color1;
+	    margin-left: 4px;
+	}
+}
+
+@mixin tags()
+{
+  background-color: $color0;
+  color: $background0-primary-0;
+  display: inline-block;
+  line-height: 1em;
+  padding: 0.5em;
+  text-decoration: none;
+  border-radius: 5px;
+	border: 1px solid $background0-primary-2;
+	@include box-shadow($size: 1px, $color: $background0-primary-1, $opacity: 0.45);
 }

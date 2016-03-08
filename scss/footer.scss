@@ -1,85 +1,55 @@
-@mixin bottom-gravity-form ()
+#widgets-bottom
 {
-	li {
-		list-style-type: none;	
-	}
+	background-image: none;
+	background-color: $background1-primary-0;
+	color: $color2;
+	padding-bottom: 13em;
 
-	label
+
+	@include font-footer-text ();
+
+	a, p, h3
 	{
-		margin-top: 1em;
-		margin-bottom: 0.5em;
+		color: $color2;	
 	}
 
-	.gfield_required {
-	    color: $color1;
-	    margin-left: 4px;
-	}
-}
-
-
-.bgtitlesection
-{
-	padding-top: 1em;
-	padding-bottom: 2em;
-}
-
-/* BACKGROUNDS */
-
-.bg-highlevel {
-
-  background: url($highlevel) repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
-
-	@include inputtextselector()
+	ul
 	{
-		background: $form-background0;
+		margin: 0 0 28px 0em;
 	}
 
-	@include bottom-gravity-form ();
-
-	a{
-		@include a-noborder();		
-	}
-
-}
-
-
-.bg-deskdark {
-
-  background: url($deskdark) repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
-
-  h1,h2,h3,p,label
-  {
-	  color: $color2;	
-  }
-
-	@include inputtextselector()
+	li
 	{
-		background: $form-background0;
-		color: $textblack;
+		margin-bottom: 15px;
+		list-style: none;
 	}
 
-	@include bottom-gravity-form ();
-	a{
-		@include a-noborder();		
+	a {
+		@include font-footer-link ();
+		@include a-borderhover ($linkcolor:$color2-primary-1,$hovercolor:$color2-primary-4);
+
+		&:link { 
+			box-shadow: none;
+			}
+		&:visited {
+			box-shadow: none;
+			}
+		&:hover {
+			box-shadow: none;
+			}
+		&:active {
+			box-shadow: none;
+			}
 	}
 
-}
+	h1,h2,h3,h4,h5,h6 {
 
-.bg-skyline {
-  background: url('static/css/images/skyline-bg.jpg') repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
-}
+		@include font-footer-header ();
 
+		margin-bottom: 15px;
+		margin-top: 1.5em;
+	}
 
-.light-color {
-	color: $textlight;
-}
-
-
-.toright
-{
-    width: 100%;
-    float: right;
-    text-align: right;
 }
 
 #footer {
@@ -87,7 +57,7 @@
 	padding: 0.5em 0;
 
 	color: $color2;
-	background-color: $color6;
+	background-color: $background1-primary-0;
 
 	font-style: italic;
 	text-align: center;
@@ -95,7 +65,7 @@
 	@include font-sans-light ();
 
 	a {
-		@include a-noborder();
+		@include a-borderhover($linkcolor:$color2,$hovercolor:$color2);
 		color: $color2;
 	}
 }

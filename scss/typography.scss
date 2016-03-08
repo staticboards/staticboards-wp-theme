@@ -215,12 +215,13 @@ $font-footer-weight-ultrabold: 900;
 {
 	font-family: $font-ui-family;
 	font-weight: $font-ui-weight-semibold; 
-	font-size: 12px;
+	font-size: 11px;
 
-	letter-spacing: +0.3pt;
-	line-height: 1em;	
-	word-spacing: +1px;
+	letter-spacing: +0.5pt;
+	line-height: 1em;
+	word-spacing: -1px;
 
+	white-space: nowrap;
 	word-wrap:break-word;
 	text-transform:uppercase;
 }
@@ -245,7 +246,7 @@ $font-footer-weight-ultrabold: 900;
 	font-size: 18px;
 
 	letter-spacing: +0.5pt;
-	line-height: 1em;	
+	line-height: 1.2em;	
 	word-spacing: +1px;
 
 	word-wrap:break-word;

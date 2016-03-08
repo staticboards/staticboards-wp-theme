@@ -6,7 +6,15 @@ $color1: #E74C3C !global;  // vivid red
 $color2: #ECF0F1 !global;  // silver
 $color3: #3498DB !global;  // vivid blue
 $color4: #2980B9 !global;  // gray blue
+$color5: #262626 !global;  // dark grey
 
+// http://paletton.com/
+
+$color0-primary-0: #2C3E50;
+$color0-primary-1: #617487;
+$color0-primary-2: #42586E;
+$color0-primary-3: #1B3147;
+$color0-primary-4: #0C2032;
 
 $color1-primary-0: #E74C3C;
 $color1-primary-1: #FF988E;
@@ -20,25 +28,41 @@ $color2-primary-2: #FFFFFF;
 $color2-primary-3: #C7D5D8;
 $color2-primary-4: #94AFB5;
 
-$color5: #646464 !global;  // light grey
-$color6: #262626 !global;  // dark grey
+$color3-primary-0: #3499DB;
+$color3-primary-1: #85C4ED;
+$color3-primary-2: #58ADE3;
+$color3-primary-3: #0F85D1;
+$color3-primary-4: #0665A2;
+
+$color4-primary-0: #2980B9;
+$color4-primary-1: #72B0D9;
+$color4-primary-2: #4995C7;
+$color4-primary-3: #096EB0;
+$color4-primary-4: #07507F;
+
+/* ELEMENTS */
+
+$background0-primary-0: #ffffff;
+$background0-primary-1: #e5e5e5;
+$background0-primary-2: #e0e0e0;
+$background0-primary-3: #F8F8F8;
+$background0-primary-4: #FBFBFB;
+
+$background1-primary-0: #262626;
+$background1-primary-1: #959393;
+$background1-primary-2: #616161;
+$background1-primary-3: #000000;
+$background1-primary-4: #030202;
 
 $textblack: #222 !global;
 $textgray: #666 !global;
 $textlight: #bbb !global;
 
-$background0: #fff;
-$background0-primary0: #ffffff !global;
-$background0-primary1: #e5e5e5 !global;
-$background0-primary2: #e0e0e0 !global;
-$background0-primary3: #F8F8F8 !global;
-$background0-primary4: #FBFBFB !global;
-
-$form-background0: #fff !global;
+$form-background0: $background0-primary-0 !global;
 $form-background0-focus: #fafafa  !global;
 
-$form-background1: #fff !global;
+$form-background1: $background0-primary-0 !global;
 $form-background1-focus: #fafafa  !global;
 
-$form-background1: $background0-primary4 !global;
-$form-background1-focus: $background0-primary3  !global;
+$form-background1: $background0-primary-4 !global;
+$form-background1-focus: $background0-primary-3  !global;

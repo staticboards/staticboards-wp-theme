@@ -20,7 +20,7 @@
 
 	.entry-content
 	{
-		a { @include a-border(); }	
+		a { @include a-border($linkcolor:$textblack,$hovercolor:$color4-primary-4); }	
 	}
 
 	select {
@@ -181,7 +181,7 @@
 			.button
 			{
 				@include flat-button ();
-				width:80%;
+				width:90%;
 			}
 		}
 	}
@@ -228,7 +228,7 @@
 			th,td
 			{
 			border:none;
-			background-color: $background0-primary1;
+			background-color: $background0-primary-1;
 			}
 		}
 
@@ -237,14 +237,14 @@
 			th
 			{
 				border:none;
-				border-top: 1px solid $background0-primary1;
+				border-top: 1px solid $background0-primary-1;
 			}
 
 			td
 			{
 				padding: 15px 12px;
 				border:none;
-				border-top: 1px solid $background0-primary1;
+				border-top: 1px solid $background0-primary-1;
 			}
 		}
 
@@ -273,7 +273,7 @@
 		li
 		{
 			margin-right: 15px;
-			border: solid 3px $background0-primary1;
+			border: solid 3px $background0-primary-1;
 
 			a { margin: 0; }
 			&:last-child { margin-right: 0px; }
