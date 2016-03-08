@@ -191,8 +191,8 @@
 @mixin bigflat-button ()
 {
 	text-align: center;
-	background-color: $background1-primary-1;
-	border: 1px $background1-primary-2 solid;
+	background-color: $background1-primary-0;
+	border: 1px $background1-primary-1 solid;
 	border-radius: 1px;
 	@include box-shadow($horizontal:0, $vertical:1px, $blur:3px, $color:rgb(0,9,0), $opacity: 0.3 );
   text-shadow: 0 1px 0 rgba(0,0,0,0.05);

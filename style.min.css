@@ -1277,8 +1277,8 @@ main .widget .widget_recent_entries li, main .widget .widget_recent_comments li 
 }
 main .widget .buttonlink {
   text-align: center;
-  background-color: #959393;
-  border: 1px #616161 solid;
+  background-color: #262626;
+  border: 1px #959393 solid;
   border-radius: 1px;
   box-shadow: 0 1px 3px 0px rgba(0, 9, 0, 0.3);
   -moz-box-shadow: 0 1px 3px 0px rgba(0, 9, 0, 0.3);
