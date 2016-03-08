@@ -1232,49 +1232,6 @@ main .widget a:active {
   color: #07507F;
   box-shadow: 0 1px 0 0 #07507F;
 }
-main .widget .widget_recent_entries a, main .widget .widget_recent_comments a {
-  color: #2980B9;
-  text-decoration: none;
-  outline: none;
-  color: #72B0D9;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  letter-spacing: -0.1pt;
-  line-height: 1.6em;
-  word-spacing: 1px;
-  word-wrap: break-word;
-  -webkit-font-smoothing: antialiased;
-  font-weight: 300;
-  font-style: italic;
-}
-main .widget .widget_recent_entries a:link,
-main .widget .widget_recent_comments a:link {
-  box-shadow: none;
-  color: #72B0D9;
-}
-main .widget .widget_recent_entries a:visited,
-main .widget .widget_recent_comments a:visited {
-  box-shadow: none;
-  color: #72B0D9;
-}
-main .widget .widget_recent_entries a:hover,
-main .widget .widget_recent_comments a:hover {
-  text-decoration: none;
-  color: #07507F;
-  box-shadow: 0 1px 0 0 #07507F;
-}
-main .widget .widget_recent_entries a:active,
-main .widget .widget_recent_comments a:active {
-  text-decoration: none;
-  color: #07507F;
-  box-shadow: 0 1px 0 0 #07507F;
-}
-main .widget .widget_recent_entries li, main .widget .widget_recent_comments li {
-  list-style: none;
-  border-left: 4px solid #ECF0F1;
-  padding-left: 12px;
-  margin-bottom: 10px;
-}
 main .widget .buttonlink {
   text-align: center;
   background-color: #262626;
@@ -1310,6 +1267,54 @@ main .widget .buttonlink a:active {
   text-decoration: none;
   color: #e5e5e5;
   box-shadow: 0 1px 0 0 #e5e5e5;
+}
+main .widget_recent_entries ul, main .widget_recent_comments ul {
+  margin: 0 0 28px 0em;
+}
+main .widget_recent_entries a, main .widget_recent_comments a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.1pt;
+  line-height: 1.6em;
+  word-spacing: 1px;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  font-style: italic;
+  text-decoration: none;
+  outline: none;
+  color: #07507F;
+}
+main .widget_recent_entries a:link, main .widget_recent_comments a:link {
+  box-shadow: none;
+  color: #07507F;
+}
+main .widget_recent_entries a:visited, main .widget_recent_comments a:visited {
+  box-shadow: none;
+  color: #07507F;
+}
+main .widget_recent_entries a:hover, main .widget_recent_comments a:hover {
+  box-shadow: none;
+  color: #72B0D9;
+}
+main .widget_recent_entries a:active, main .widget_recent_comments a:active {
+  box-shadow: none;
+  color: #72B0D9;
+}
+main .widget_recent_entries li, main .widget_recent_comments li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.1pt;
+  line-height: 1.6em;
+  word-spacing: 1px;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  font-style: italic;
+  list-style: none;
+  border-left: 4px solid #ECF0F1;
+  padding-left: 12px;
+  margin-bottom: 10px;
 }
 main .post-thumbnail {
   margin-bottom: 2em;
@@ -1459,7 +1464,6 @@ main .entrylist-article {
   background-color: #FBFBFB;
   padding-bottom: 1.5em;
   margin-bottom: 3em;
-  font-size: 90%;
   line-height: 1.3em;
 }
 main .entrylist-header, main .entrylist-content, main .entrylist-footer {

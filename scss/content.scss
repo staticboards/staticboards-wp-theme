@@ -6,28 +6,36 @@ main
 	{
 		a { @include a-borderhover($linkcolor:$textblack,$hovercolor:$color4-primary-4) ; }
 
-		.widget_recent_entries , .widget_recent_comments
-		{
-			a {
-				color: $color4;
-				@include a-borderhover ($linkcolor:$color4-primary-1,$hovercolor:$color4-primary-4);
-				@include font-sans-light();
-				font-style: italic;
-			}
-
-			li
-			{
-				list-style: none;
-				border-left: 4px solid $color2;
-				padding-left: 12px;
-				margin-bottom: 10px;
-			}
-		}
-
 		/* used in call to actions in landingpages */
 		.buttonlink
 		{
 			@include bigflat-button ();
+		}
+
+	}
+
+	.widget_recent_entries , .widget_recent_comments
+	{
+		ul
+		{
+			margin: 0 0 28px 0em;
+		}
+
+		a {
+			@include font-sans-light();
+			font-style: italic;
+			@include a-noborder ($linkcolor:$color4-primary-4,$hovercolor:$color4-primary-1);
+		}
+
+		li
+		{
+			@include font-sans-light();
+			font-style: italic;
+
+			list-style: none;
+			border-left: 4px solid $color2;
+			padding-left: 12px;
+			margin-bottom: 10px;
 		}
 
 	}
@@ -174,7 +182,6 @@ main
 
 		padding-bottom: 1.5em;
 		margin-bottom: 3em;
-		font-size: 90%;
 		line-height: 1.3em;
 	}
 
