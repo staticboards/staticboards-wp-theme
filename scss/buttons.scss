@@ -26,28 +26,6 @@
 	background:$color3;
 }
 
-
-/* BUTTON LINKS */
-
-.buttonlink
-{
-	text-align: center;
-
-	background-color: #656D71;
-	border: 1px #888 solid;
-	border-radius: 1px;
-	@include box-shadow($horizontal:0, $vertical:1px, $blur:3px, $color:rgb(0,9,0), $opacity: 0.3 );
-  text-shadow: 0 1px 0 rgba(0,0,0,0.05);
-
-	padding: 1em 20px;
-	margin: 3em 0em;
-
-	a {
-		font-weight: $font-sans-weight-normal;
-		@include a-borderhover($linkcolor:$background0-primary-1,$hovercolor:$background0-primary-1);
-	}
-}
-
 .cta-button a {
 
 	@include cta-button();

@@ -770,42 +770,6 @@ fieldset {
   color: #ECF0F1;
   background: #3498DB;
 }
-.buttonlink {
-  text-align: center;
-  background-color: #656D71;
-  border: 1px #888 solid;
-  border-radius: 1px;
-  box-shadow: 0 1px 3px 0px rgba(0, 9, 0, 0.3);
-  -moz-box-shadow: 0 1px 3px 0px rgba(0, 9, 0, 0.3);
-  -webkit-box-shadow: 0 1px 3px 0px rgba(0, 9, 0, 0.3);
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
-  padding: 1em 20px;
-  margin: 3em 0em;
-}
-.buttonlink a {
-  font-weight: 400;
-  text-decoration: none;
-  outline: none;
-  color: #e5e5e5;
-}
-.buttonlink a:link {
-  box-shadow: none;
-  color: #e5e5e5;
-}
-.buttonlink a:visited {
-  box-shadow: none;
-  color: #e5e5e5;
-}
-.buttonlink a:hover {
-  text-decoration: none;
-  color: #e5e5e5;
-  box-shadow: 0 1px 0 0 #e5e5e5;
-}
-.buttonlink a:active {
-  text-decoration: none;
-  color: #e5e5e5;
-  box-shadow: 0 1px 0 0 #e5e5e5;
-}
 .cta-button a {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
@@ -1310,6 +1274,42 @@ main .widget .widget_recent_entries li, main .widget .widget_recent_comments li 
   border-left: 4px solid #ECF0F1;
   padding-left: 12px;
   margin-bottom: 10px;
+}
+main .widget .buttonlink {
+  text-align: center;
+  background-color: #959393;
+  border: 1px #616161 solid;
+  border-radius: 1px;
+  box-shadow: 0 1px 3px 0px rgba(0, 9, 0, 0.3);
+  -moz-box-shadow: 0 1px 3px 0px rgba(0, 9, 0, 0.3);
+  -webkit-box-shadow: 0 1px 3px 0px rgba(0, 9, 0, 0.3);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  padding: 1em 20px;
+  margin: 3em 0em;
+}
+main .widget .buttonlink a {
+  font-weight: 400;
+  text-decoration: none;
+  outline: none;
+  color: #e5e5e5;
+}
+main .widget .buttonlink a:link {
+  box-shadow: none;
+  color: #e5e5e5;
+}
+main .widget .buttonlink a:visited {
+  box-shadow: none;
+  color: #e5e5e5;
+}
+main .widget .buttonlink a:hover {
+  text-decoration: none;
+  color: #e5e5e5;
+  box-shadow: 0 1px 0 0 #e5e5e5;
+}
+main .widget .buttonlink a:active {
+  text-decoration: none;
+  color: #e5e5e5;
+  box-shadow: 0 1px 0 0 #e5e5e5;
 }
 main .post-thumbnail {
   margin-bottom: 2em;

@@ -23,6 +23,13 @@ main
 				margin-bottom: 10px;
 			}
 		}
+
+		/* used in call to actions in landingpages */
+		.buttonlink
+		{
+			@include bigflat-button ();
+		}
+
 	}
 
 	.entry-header
