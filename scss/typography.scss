@@ -148,10 +148,28 @@ $font-footer-weight-ultrabold: 900;
 }
 
 
-@mixin font-sans-blockquote()
+@mixin font-sans-blockquote-italic()
 {
 	font-family: $font-sans-family;
 	font-weight: $font-sans-weight-light; 
+	font-size: 19px;
+	line-height: 1.4736842105;
+	font-style: italic;
+}
+
+@mixin font-sans-blockquote-normal()
+{
+	font-family: $font-sans-family;
+	font-weight: $font-sans-weight-normal; 
+	font-size: 19px;
+	line-height: 1.4736842105;
+	font-style: normal;
+}
+
+@mixin font-sans-blockquote-bold()
+{
+	font-family: $font-sans-family;
+	font-weight: $font-sans-weight-semibold; 
 	font-size: 19px;
 	font-style: italic;
 	line-height: 1.4736842105;

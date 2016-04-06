@@ -118,55 +118,92 @@ input[type=submit] { width:auto; -webkit-appearance:none; }
 /* THEME */
 
 blockquote {
-	@include font-sans-blockquote();
-	border-left: 4px solid #1a1a1a;
-	color: #686868;
+
+	@include font-sans-blockquote-italic();
+	border-left: 4px solid $textblack;
+	color: $textgray;
 	margin-bottom: 28px;
 	padding: 0 0 0 24px;
-}
 
-blockquote:not(.alignleft):not(.alignright) {
-	margin-left: -28px;
-}
+	cite,small {
+		color: $textblack;
+	}
 
-blockquote blockquote:not(.alignleft):not(.alignright) {
-	margin-left: 0;
-}
+	em,i,cite {
+	}
 
-blockquote:before,
-blockquote:after {
-	content: "";
-	display: table;
-}
+	strong,b {
+	}
 
-blockquote:after {
-	clear: both;
-}
+	&:not(.alignleft):not(.alignright) {
+		margin-left: -28px;
+	}
 
-blockquote > :last-child {
-	margin-bottom: 0;
-}
+	blockquote:not(.alignleft):not(.alignright) {
+		margin-left: 0;
+	}
 
-blockquote cite,
-blockquote small {
-	color: #1a1a1a;
-}
+	&:before,&:after {
+		content: "";
+		display: table;
+	}
 
-blockquote em,
-blockquote i,
-blockquote cite {
-}
 
-blockquote strong,
-blockquote b {
-}
+	&:after {
+		clear: both;
+	}
 
-blockquote.alignleft,
-blockquote.alignright {
-	border: 0 solid #1a1a1a;
-	border-top-width: 4px;
-	padding: 18px 0 0;
-	width: calc(50% - 14px);
+	& > :last-child {
+		margin-bottom: 0;
+	}
+
+	&.alignleft, &.alignright {
+		border: 0 solid $textblack;
+		border-top-width: 4px;
+		padding: 18px 0 0;
+		width: calc(50% - 14px);
+	}
+
+	@mixin blockquote-color($color1:$color3-secondary-1-1,$color2:$color3-secondary-1-4,$margin: 28px)
+	{
+		@include font-sans-blockquote-italic();
+
+		background-color: $color1;
+		color: $textblack;
+		border: none;
+		margin-left: -$margin;
+		margin-right: $margin;
+		margin-bottom: $margin;
+		padding: $margin;
+
+		&:not(.alignleft):not(.alignright) {
+			margin-left: -$margin;
+			margin-right:-$margin;
+			padding: $margin;
+		}
+
+		cite
+		{
+			@include font-sans-blockquote-bold();
+			background-color: $color2;
+			display: block;
+			margin-top: -$margin;
+			margin-left: -$margin;
+			margin-right:-$margin;
+			padding: $margin;
+		}	
+	}
+
+	&.quote-color1
+	{
+		@include blockquote-color($color1:$color3-secondary-1-1,$color2:$color3-secondary-1-4,$margin: 28px);
+	}
+
+	&.quote-color2
+	{
+		@include blockquote-color($color1:$color3-secondary-2-1,$color2:$color3-secondary-2-4,$margin: 28px);
+	}
+
 }
 
 address {
