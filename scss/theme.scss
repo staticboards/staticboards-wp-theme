@@ -182,10 +182,11 @@ blockquote {
 			padding: $margin;
 		}
 
-		cite
+		strong
 		{
 			@include font-sans-blockquote-bold();
 			background-color: $color2;
+			color: $textwhite;
 			display: block;
 			margin-top: -$margin;
 			margin-left: -$margin;
@@ -196,10 +197,15 @@ blockquote {
 
 	&.quote-color1
 	{
-		@include blockquote-color($color1:$color3-secondary-1-1,$color2:$color3-secondary-1-4,$margin: 28px);
+		@include blockquote-color($color1:$color3-primary-1,$color2:$color3-primary-4,$margin: 28px);
 	}
 
 	&.quote-color2
+	{
+		@include blockquote-color($color1:$color3-secondary-1-1,$color2:$color3-secondary-1-4,$margin: 28px);
+	}
+
+	&.quote-color3
 	{
 		@include blockquote-color($color1:$color3-secondary-2-1,$color2:$color3-secondary-2-4,$margin: 28px);
 	}

@@ -169,9 +169,9 @@ $font-footer-weight-ultrabold: 900;
 @mixin font-sans-blockquote-bold()
 {
 	font-family: $font-sans-family;
-	font-weight: $font-sans-weight-semibold; 
+	font-weight: $font-sans-weight-bold; 
 	font-size: 19px;
-	font-style: italic;
+	font-style: normal;
 	line-height: 1.4736842105;
 }
 
