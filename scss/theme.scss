@@ -174,12 +174,12 @@ blockquote {
 		margin-left: -$margin;
 		margin-right: $margin;
 		margin-bottom: 2*$margin;
-		padding: $margin;
+		padding: $margin $margin 2*$margin $margin;
 
 		&:not(.alignleft):not(.alignright) {
 			margin-left: -$margin;
 			margin-right:-$margin;
-			padding: $margin;
+			padding: $margin $margin 2*$margin $margin;
 		}
 
 		strong
