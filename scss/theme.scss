@@ -166,14 +166,14 @@ blockquote {
 
 	@mixin blockquote-color($color1:$color3-secondary-1-1,$color2:$color3-secondary-1-4,$margin: 28px)
 	{
-		@include font-sans-blockquote-italic();
+		@include font-sans-blockquote-normal();
 
 		background-color: $color1;
 		color: $textblack;
 		border: none;
 		margin-left: -$margin;
 		margin-right: $margin;
-		margin-bottom: $margin;
+		margin-bottom: 2*$margin;
 		padding: $margin;
 
 		&:not(.alignleft):not(.alignright) {
