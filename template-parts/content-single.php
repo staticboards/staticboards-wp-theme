@@ -2,11 +2,11 @@
 
 			<div class="entry-body">
 
-				<?php	staticboards_post_thumbnail () ; ?>
-
 				<header class="entry-header">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</header>
+
+				<?php	staticboards_post_thumbnail () ; ?>
 
 				<?php
 				the_content();

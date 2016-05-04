@@ -22,18 +22,18 @@ main
 		}
 
 		a {
-			@include font-sans-light();
-			font-style: italic;
+			@include font-sans-sidebar();
+			font-style: normal;
 			@include a-noborder ($linkcolor:$color4-primary-4,$hovercolor:$color4-primary-1);
 		}
 
 		li
 		{
-			@include font-sans-light();
-			font-style: italic;
+			@include font-sans-sidebar();
+			font-style: normal;
 
 			list-style: none;
-			border-left: 4px solid $color2;
+			border-left: 6px solid $color2;
 			padding-left: 12px;
 			margin-bottom: 10px;
 		}

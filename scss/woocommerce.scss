@@ -7,6 +7,13 @@
 	{
 		width: auto;
 	}
+
+	#content div.product div.thumbnails a,
+	div.product div.thumbnails a
+	{
+		margin:0;
+	}
+
 }
 
 .woocommerce
@@ -50,6 +57,11 @@
 		margin: 2px;
 		position: relative;
 		font-size: 12px;
+	}
+
+	#content div.product div.thumbnails a,
+	div.product div.thumbnails a {
+		margin:0;
 	}
 
 	#content table.cart td.actions .input-text,
