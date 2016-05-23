@@ -548,17 +548,17 @@ fieldset {
 
 	.toc_title
 	{
-		@include font-sans-bold();
+		@include font-toc-title();
 	}
 
 	ul
 	{
-		list-style: square;
+		list-style: disc;
 	}
 
 	a
 	{
 		@include a-borderhover($linkcolor:$color4-primary-4,$hovercolor:$color4-primary-4);
-		@include font-sans-normal();
+		@include font-toc-text();
 	}	
 }

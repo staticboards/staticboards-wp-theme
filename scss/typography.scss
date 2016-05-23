@@ -356,3 +356,17 @@ $font-footer-weight-ultrabold: 900;
 	word-wrap:normal;
 	margin-bottom: 0.5em;	
 }
+
+@mixin font-toc-title ()
+{
+	@include font-sans-text();
+	font-weight: $font-sans-weight-semibold; 
+	font-size: 14px;
+}
+
+@mixin font-toc-text ()
+{
+	@include font-sans-text();
+	font-weight: $font-sans-weight-normal; 
+	font-size: 14px;
+}
