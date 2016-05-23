@@ -234,11 +234,21 @@ pre {
 	padding: 14px;
 	margin: 0 0 28px;
 	max-width: 100%;
+
+	code 
+	{
+		display: block;
+		background-color: $background0-primary-2;
+		color: $color1-primary-3;
+		padding: 14px;
+		margin: -14px;
+	}
 }
 
 code {
 	background-color: $background0-primary-2;
-	padding: 2px 4px;
+	padding: 4px 6px;
+	color: $color1-primary-3;
 }
 
 abbr[title] {
