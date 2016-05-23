@@ -540,3 +540,19 @@ fieldset {
     text-align: right;
 }
 
+#toc_container
+{
+	@include panel ();
+
+	padding: 14px;
+
+	ul
+	{
+		list-style: square;
+	}
+
+	a
+	{
+		@include a-borderhover($linkcolor:$color4-primary-4,$hovercolor:$color4-primary-4);
+	}	
+}
