@@ -546,6 +546,11 @@ fieldset {
 
 	padding: 14px;
 
+	.toc_title
+	{
+		@include font-sans-bold();
+	}
+
 	ul
 	{
 		list-style: square;
@@ -554,5 +559,6 @@ fieldset {
 	a
 	{
 		@include a-borderhover($linkcolor:$color4-primary-4,$hovercolor:$color4-primary-4);
+		@include font-sans-normal();
 	}	
 }
