@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php get_template_part( 'template-parts/navbar', get_post_format() ); ?>
 
-<main role="main" id="content" class="woocommerce woocommerce-page">
+<main role="main" id="content" class="woocommerce woocommerce-page columns-3 archive-product">
 
 		<div class="fullwidth">
 			<div class="container-fluid postwidth">
