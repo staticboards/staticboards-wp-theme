@@ -114,7 +114,7 @@ function staticboards_widgets_init() {
     ) );
 
     register_sidebar( array(
-        'name'          => __( 'Content Bottom CTA 1', 'staticboards' ),
+        'name'          => __( 'Content Bottom CTA Light', 'staticboards' ),
         'id'            => 'sidebar-cta-light',
         'description'   => __( 'Appears at the bottom of the content on posts and pages.', 'staticboards' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="row"><div class="col-sm-12">',
@@ -124,7 +124,7 @@ function staticboards_widgets_init() {
     ) );
 
     register_sidebar( array(
-        'name'          => __( 'Content Bottom CTA 2', 'staticboards' ),
+        'name'          => __( 'Content Bottom CTA Dark', 'staticboards' ),
         'id'            => 'sidebar-cta-dark',
         'description'   => __( 'Appears at the bottom of the content on posts and pages.', 'staticboards' ),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
