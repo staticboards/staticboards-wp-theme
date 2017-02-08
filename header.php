@@ -41,3 +41,8 @@ src="https://www.facebook.com/tr?id=960399134028829&ev=PageView&noscript=1"
   
 </head>
 <body <?php body_class(); ?>>
+<?php
+//<div style="width:100%; text-align: center; background-color: #ffa3a3; font-weight: 700; font-family: Raleway; margin-bottom: 25px;">
+//La tienda permanecer&aacute; cerrada desde el Viernes 20, hasta el pr&oacute;ximo 3 de febrero
+//</div>
+?>
